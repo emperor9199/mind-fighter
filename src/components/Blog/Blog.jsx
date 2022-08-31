@@ -1,5 +1,9 @@
 import React from "react";
 import "./Blog.css";
+import blog1 from "../../images/blog1.jpg";
+import blog2 from "../../images/blog2.jpg"
+import blog3 from "../../images/blog3.jpg"
+
 
 const Blog = () => {
   return (
@@ -26,7 +30,7 @@ const Blog = () => {
           <div className="col-lg-4 col-md-6 col-sm-12">
             <div className="blog-post-thumb">
               <div className="img">
-                <img src="" alt="" />
+                <img src={blog1} alt="" />
               </div>
               <div className="blog-content">
                 <h3>
@@ -46,7 +50,7 @@ const Blog = () => {
           <div className="col-lg-4 col-md-6 col-sm-12">
             <div className="blog-post-thumb">
               <div className="img">
-                <img src="" alt="" />
+                <img src={blog2} alt="" />
               </div>
               <div className="blog-content">
                 <h3>
@@ -66,7 +70,7 @@ const Blog = () => {
           <div className="col-lg-4 col-md-6 col-sm-12">
             <div className="blog-post-thumb">
               <div className="img">
-                <img src="" alt="" />
+                <img src={blog3} alt="" />
               </div>
               <div className="blog-content">
                 <h3>

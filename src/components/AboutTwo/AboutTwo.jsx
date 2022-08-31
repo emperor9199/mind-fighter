@@ -1,6 +1,6 @@
 import React from "react";
 import "./AboutTwo.css";
-import rightImg from "../../images/right-image.png";
+import about2 from "../../images/about2.svg";
 
 const AboutTwo = () => {
   return (
@@ -28,7 +28,7 @@ const AboutTwo = () => {
             data-scroll-reveal="enter right move 30px over 0.6s after 0.4s"
           >
             <img
-              src={rightImg}
+              src={about2}
               className="rounded img-fluid d-block mx-auto"
               alt="App"
             />

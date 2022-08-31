@@ -1,7 +1,45 @@
-import React from "react";
+import React,{useState, useEffect} from "react";
 import "./Counter.css";
 
 const Counter = () => {
+
+  const [client, setClient] = useState(1);
+  const [trainer, setTrainer] = useState(1);
+  const [projects, setProjects] = useState(1);
+  const [years, setYears] = useState(1);
+
+  useEffect(() => {
+    if (client < 10) {
+      setTimeout(() => {
+        setClient((counter) => counter + 1);
+      }, 100);
+    }
+  }, [client]);
+
+  useEffect(() => {
+    if (client < 10) {
+      setTimeout(() => {
+        setTrainer((counter) => counter + 1);
+      }, 100);
+    }
+  }, [trainer]);
+
+  useEffect(() => {
+    if (client < 10) {
+      setTimeout(() => {
+        setProjects((counter) => counter + 1);
+      }, 100);
+    }
+  }, [projects]);
+
+  useEffect(() => {
+    if (client < 2) {
+      setTimeout(() => {
+        setYears((counter) => counter + 1);
+      }, 1000);
+    }
+  }, [years]);
+
   return (
     <section className="counter">
       <div className="content">
@@ -9,25 +47,25 @@ const Counter = () => {
           <div className="row">
             <div className="col-lg-3 col-md-6 col-sm-12">
               <div className="count-item decoration-bottom">
-                <strong>126</strong>
+                <strong>{projects}</strong>
                 <span>Projects</span>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 col-sm-12">
               <div className="count-item decoration-top">
-                <strong>63</strong>
+                <strong>{client}</strong>
                 <span>Happy Clients</span>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 col-sm-12">
               <div className="count-item decoration-bottom">
-                <strong>18</strong>
+                <strong>{years}</strong>
                 <span>Awards Wins</span>
               </div>
             </div>
             <div className="col-lg-3 col-md-6 col-sm-12">
               <div className="count-item">
-                <strong>27</strong>
+                <strong>{trainer}</strong>
                 <span>Countries</span>
               </div>
             </div>
