@@ -1,5 +1,7 @@
 import React from "react";
 import "./Footer.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   return (
@@ -10,27 +12,27 @@ const Footer = () => {
             <ul className="social">
               <li>
                 <a href="#">
-                  <i className="fa fa-facebook"></i>
+                  <FontAwesomeIcon icon={faCoffee} />
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <i className="fa fa-twitter"></i>
+                  <FontAwesomeIcon icon={faCoffee} />
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <i className="fa fa-linkedin"></i>
+                  <FontAwesomeIcon icon={faCoffee} />
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <i className="fa fa-rss"></i>
+                  <FontAwesomeIcon icon={faCoffee} />
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <i className="fa fa-dribbble"></i>
+                  <FontAwesomeIcon icon={faCoffee} />
                 </a>
               </li>
             </ul>
@@ -38,7 +40,7 @@ const Footer = () => {
         </div>
         <div className="row">
           <div className="col-lg-12">
-            <p className="copyright">Copyright &copy; Mind Fighters</p>
+            <p className="copyright">Copyright &copy; The Mind Fighters</p>
           </div>
         </div>
       </div>

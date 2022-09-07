@@ -1,5 +1,6 @@
 import React from "react";
 import "./Services.css";
+import workImg from "../../images/work-process-item-01.png";
 
 const Services = () => {
   return (
@@ -9,10 +10,11 @@ const Services = () => {
           <div className="row">
             <div className="offset-lg-3 col-lg-6">
               <div className="info">
-                <h1>Work Process</h1>
+                <h1>Services</h1>
                 <p>
-                  Aenean nec tempor metus. Maecenas ligula dolor, commodo in
-                  imperdiet interdum, vehicula ut ex. Donec ante diam.
+                  Services we provide covers many of the life problems and
+                  mental issues, we have multiple options you can choose from
+                  and can contact us
                 </p>
               </div>
             </div>
@@ -22,55 +24,55 @@ const Services = () => {
             <div className="col-lg-2 col-md-3 col-sm-6 col-6">
               <a href="#" className="mini-box">
                 <i>
-                  <img src="assets/images/work-process-item-01.png" alt="" />
+                  <img src={workImg} alt="" />
                 </i>
-                <strong>Get Ideas</strong>
-                <span>Godard pabst prism fam cliche.</span>
+                <strong>Depression</strong>
+                <span>Depression counselling</span>
               </a>
             </div>
             <div className="col-lg-2 col-md-3 col-sm-6 col-6">
               <a href="#" className="mini-box">
                 <i>
-                  <img src="assets/images/work-process-item-01.png" alt="" />
+                  <img src={workImg} alt="" />
                 </i>
-                <strong>Sketch Up</strong>
-                <span>Godard pabst prism fam cliche.</span>
+                <strong>Couple</strong>
+                <span>Couple counselling</span>
               </a>
             </div>
             <div className="col-lg-2 col-md-3 col-sm-6 col-6">
               <a href="#" className="mini-box">
                 <i>
-                  <img src="assets/images/work-process-item-01.png" alt="" />
+                  <img src={workImg} alt="" />
                 </i>
-                <strong>Discuss</strong>
-                <span>Godard pabst prism fam cliche.</span>
+                <strong>Relationship</strong>
+                <span>Relationship counselling</span>
               </a>
             </div>
             <div className="col-lg-2 col-md-3 col-sm-6 col-6">
               <a href="#" className="mini-box">
                 <i>
-                  <img src="assets/images/work-process-item-01.png" alt="" />
+                  <img src={workImg} alt="" />
                 </i>
-                <strong>Revise</strong>
-                <span>Godard pabst prism fam cliche.</span>
+                <strong>Corporate</strong>
+                <span>Corporate counselling</span>
               </a>
             </div>
             <div className="col-lg-2 col-md-3 col-sm-6 col-6">
               <a href="#" className="mini-box">
                 <i>
-                  <img src="assets/images/work-process-item-01.png" alt="" />
+                  <img src={workImg} alt="" />
                 </i>
-                <strong>Approve</strong>
-                <span>Godard pabst prism fam cliche.</span>
+                <strong>Mental health</strong>
+                <span>Mental health counselling</span>
               </a>
             </div>
             <div className="col-lg-2 col-md-3 col-sm-6 col-6">
               <a href="#" className="mini-box">
                 <i>
-                  <img src="assets/images/work-process-item-01.png" alt="" />
+                  <img src={workImg} alt="" />
                 </i>
-                <strong>Launch</strong>
-                <span>Godard pabst prism fam cliche.</span>
+                <strong>Lifestyle</strong>
+                <span>Lifestyle counselling</span>
               </a>
             </div>
           </div>

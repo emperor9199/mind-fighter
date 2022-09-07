@@ -1,5 +1,6 @@
 import React from "react";
 import "./Navbar.css";
+import logoImg from "../../images/mf_logo.jpeg";
 
 const Navbar = () => {
   return (
@@ -7,30 +8,33 @@ const Navbar = () => {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <nav className="main-nav">
-              <a href="#" className="logo">
-                <img src="assets/images/logo.png" alt="Softy Pinko" />
+            <nav className="main-nav d-flex flex-row justify-content-between align-items-center">
+              <a>
+                <img
+                  src={logoImg}
+                  alt="The Mind Fighter"
+                  style={{
+                    width: "4rem",
+                    marginLeft: "1rem",
+                  }}
+                />
               </a>
+
               <ul className="nav">
                 <li>
-                  <a href="#welcome" className="active text-primary">
+                  <a href="#welcome" className="active">
                     Home
                   </a>
                 </li>
                 <li>
                   <a href="#features">About</a>
                 </li>
+
                 <li>
-                  <a href="#work-process">Work Process</a>
+                  <a href="#blog">Blog</a>
                 </li>
                 <li>
-                  <a href="#testimonials">Testimonials</a>
-                </li>
-                <li>
-                  <a href="#pricing-plans">Pricing Tables</a>
-                </li>
-                <li>
-                  <a href="#blog">Blog Entries</a>
+                  <a href="#work-process">Services</a>
                 </li>
                 <li>
                   <a href="#contact-us">Contact Us</a>

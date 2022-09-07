@@ -20,13 +20,17 @@ const AboutUs = () => {
           <div className="col-lg-1"></div>
           <div className="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-top-fix">
             <div className="left-heading">
-              <h2 className="section-title">Let’s discuss about you project</h2>
+              <h2 className="section-title">Who we are?</h2>
             </div>
             <div className="left-text">
               <p>
-                Nullam sit amet purus libero. Etiam ullamcorper nisl ut augue
-                blandit, at finibus leo efficitur. Nam gravida purus non sapien
-                auctor, ut aliquam magna ullamcorper.
+                It has been seen and noted that from past few years there is
+                high rise in the cases of suicide as well as depression
+                especially during Covid-19 and even post covid-19. We provide
+                services for people who are facing any emotional, psychological,
+                social or personal challenges in their lives. We also offer
+                mindfulness meditation to cope up with anxiety, stress,
+                depression.
               </p>
             </div>
           </div>

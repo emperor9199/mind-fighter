@@ -13,31 +13,28 @@ const ContactUs = () => {
           </div>
           <div class="offset-lg-3 col-lg-6">
             <div class="center-text">
-              <p>
-                Maecenas pellentesque ante faucibus lectus vulputate
-                sollicitudin. Cras feugiat hendrerit semper.
-              </p>
+              <p>The Mind Fighter – Attract Your Thoughts into Action</p>
             </div>
           </div>
         </div>
 
         <div class="row">
-          <div class="col-lg-4 col-md-6 col-sm-12">
+          {/* <div class="col-lg-4 col-md-6 col-sm-12">
             <h5 class="margin-bottom-30">Keep in touch</h5>
             <div class="contact-text">
               <p>
-                110-220 Quisque diam odio, maximus ac consectetur eu, 10260
+                111-222 abcd, xyz
                 <br />
-                auctor non lorem
+                abc def ghf
               </p>
               <p>
-                You are NOT allowed to re-distribute Softy Pinko template on any
-                template collection websites. Thank you.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Accusantium, tempore dolore.
               </p>
             </div>
-          </div>
+          </div> */}
 
-          <div class="col-lg-8 col-md-6 col-sm-12">
+          <div class="col-lg-8 col-md-6 col-sm-12 container">
             <div class="contact-form">
               <form id="contact" action="" method="get">
                 <div class="row">
@@ -77,7 +74,7 @@ const ContactUs = () => {
                       ></textarea>
                     </fieldset>
                   </div>
-                  <div class="col-lg-12">
+                  <div class="col-lg-12 text-center">
                     <fieldset>
                       <button
                         type="submit"

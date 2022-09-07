@@ -1,9 +1,8 @@
 import React from "react";
 import "./Blog.css";
 import blog1 from "../../images/blog1.jpg";
-import blog2 from "../../images/blog2.jpg"
-import blog3 from "../../images/blog3.jpg"
-
+import blog2 from "../../images/blog2.jpg";
+import blog3 from "../../images/blog3.jpg";
 
 const Blog = () => {
   return (
@@ -34,12 +33,13 @@ const Blog = () => {
               </div>
               <div className="blog-content">
                 <h3>
-                  <a href="#">Vivamus ac vehicula dui</a>
+                  <a href="#">Blog 1</a>
                 </h3>
                 <div className="text">
-                  Cras aliquet ligula dui, vitae fermentum velit tincidunt id.
-                  Praesent eu finibus nunc. Nulla in sagittis eros. Aliquam
-                  egestas augue.
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab,
+                  ullam! Iusto at fugiat maxime maiores quod neque nobis quos
+                  atque explicabo et cumque voluptatem, commodi eius, delectus
+                  nam dicta. Incidunt!
                 </div>
                 <a href="#" className="main-button">
                   Read More
@@ -54,12 +54,13 @@ const Blog = () => {
               </div>
               <div className="blog-content">
                 <h3>
-                  <a href="#">Phasellus convallis augue</a>
+                  <a href="#">Blog 2</a>
                 </h3>
                 <div className="text">
-                  Aliquam commodo ornare nisl, et scelerisque nisl dignissim ac.
-                  Vestibulum finibus urna ut velit venenatis, vel ultrices
-                  sapien mattis.
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis
+                  nesciunt impedit ratione! Deserunt accusantium deleniti sunt
+                  veniam maxime quibusdam esse assumenda in, incidunt
+                  necessitatibus dolor sed ad tempore debitis
                 </div>
                 <a href="#" className="main-button">
                   Read More
@@ -74,12 +75,13 @@ const Blog = () => {
               </div>
               <div className="blog-content">
                 <h3>
-                  <a href="#">Nam gravida purus non</a>
+                  <a href="#">Blog 3</a>
                 </h3>
                 <div className="text">
-                  Maecenas eu erat vitae dui convallis consequat vel gravida
-                  nulla. Vestibulum finibus euismod odio, ut tempus enim varius
-                  eu.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
+                  porro placeat optio deleniti illum sunt perspiciatis, sequi
+                  rerum sed! Mollitia velit, facere officia ad natus asperiores
+                  inventore tempora laborum libero.
                 </div>
                 <a href="#" className="main-button">
                   Read More

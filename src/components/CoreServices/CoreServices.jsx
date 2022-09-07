@@ -1,5 +1,8 @@
 import React from "react";
 import "./CoreServices.css";
+import depressionImg from "../../images/depression.png";
+import relationshipImg from "../../images/relationship.png";
+import corporateImg from "../../images/corporate.png";
 
 const CoreServices = () => {
   return (
@@ -15,13 +18,13 @@ const CoreServices = () => {
                 <div className="features-small-item">
                   <div className="icon">
                     <i>
-                      <img src="assets/images/featured-item-01.png" alt="" />
+                      <img src={depressionImg} alt="" />
                     </i>
                   </div>
-                  <h5 className="features-title">Modern Strategy</h5>
+                  <h5 className="features-title">Depression counselling</h5>
                   <p>
-                    Customize anything in this template to fit your website
-                    needs
+                    Depression is a serious mood disorder, with an estimated 1
+                    million Indian adults have it
                   </p>
                 </div>
               </div>
@@ -32,11 +35,14 @@ const CoreServices = () => {
                 <div className="features-small-item">
                   <div className="icon">
                     <i>
-                      <img src="assets/images/featured-item-01.png" alt="" />
+                      <img src={relationshipImg} alt="" />
                     </i>
                   </div>
-                  <h5 className="features-title">Best Relationship</h5>
-                  <p>Contact us immediately if you have a question in mind</p>
+                  <h5 className="features-title">Relationship counselling</h5>
+                  <p>
+                    Premarital counseling is a type of relationship therapy that
+                    helps prepare couples.
+                  </p>
                 </div>
               </div>
               <div
@@ -46,12 +52,13 @@ const CoreServices = () => {
                 <div className="features-small-item">
                   <div className="icon">
                     <i>
-                      <img src="assets/images/featured-item-01.png" alt="" />
+                      <img src={corporateImg} alt="" />
                     </i>
                   </div>
-                  <h5 className="features-title">Ultimate Marketing</h5>
+                  <h5 className="features-title">Corporate counselling</h5>
                   <p>
-                    You just need to tell your friends about our free templates
+                    Corporate counseling is the process of counseling the
+                    parties having differences.
                   </p>
                 </div>
               </div>

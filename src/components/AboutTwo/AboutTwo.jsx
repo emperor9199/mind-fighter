@@ -9,16 +9,17 @@ const AboutTwo = () => {
         <div className="row">
           <div className="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
             <div className="left-heading">
-              <h2 className="section-title">
-                We can help you to grow your business
-              </h2>
+              <h2 className="section-title">Why you should come to us?</h2>
             </div>
             <div className="left-text">
               <p>
-                Aenean pretium, ipsum et porttitor auctor, metus ipsum iaculis
-                nisi, a bibendum lectus libero vitae urna. Sed id leo eu dolor
-                luctus congue sed eget ipsum. Nunc nec luctus libero. Etiam quis
-                dolor elit.
+                The main aim is to help through counselling and psychological
+                therapies in holistic way. We use psychological tests to assess
+                the client as per the need. Our services will be provided though
+                video calls, mails, calls, chats, and offline counselling in
+                special cases. We ensure you for 100% confidentiality. We are
+                here to hear and understand you to help with professional
+                guidance and counselling.
               </p>
             </div>
           </div>
