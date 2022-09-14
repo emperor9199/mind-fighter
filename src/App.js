@@ -11,6 +11,7 @@ import Counter from "./components/Counter/Counter";
 import Blog from "./components/Blog/Blog";
 import ContactUs from "./components/ContactUs/ContactUs";
 import Footer from "./components/Footer/Footer";
+import FAQ from "./components/FAQ/FAQ";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <Testinomials />
       <Counter />
       <Blog />
+      <FAQ />
       <ContactUs />
       <Footer />
     </>
