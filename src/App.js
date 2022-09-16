@@ -6,7 +6,7 @@ import CoreServices from "./components/CoreServices/CoreServices";
 import AboutUs from "./components/AboutUs/AboutUs";
 import AboutTwo from "./components/AboutTwo/AboutTwo";
 import Services from "./components/Services/Services";
-import Testinomials from "./components/Testinomials/Testinomials";
+import TestiMonials from "./components/Testinomials/TestiMonials";
 import Counter from "./components/Counter/Counter";
 import Blog from "./components/Blog/Blog";
 import ContactUs from "./components/ContactUs/ContactUs";
@@ -21,7 +21,7 @@ function App() {
       <AboutUs />
       <AboutTwo />
       <Services />
-      <Testinomials />
+      <TestiMonials />
       <Counter />
       <Blog />
       <ContactUs />
