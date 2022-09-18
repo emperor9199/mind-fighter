@@ -12,6 +12,7 @@ import Blog from "./components/Blog/Blog";
 import ContactUs from "./components/ContactUs/ContactUs";
 import Footer from "./components/Footer/Footer";
 import FAQ from "./components/FAQ/FAQ";
+import AboutThree from "./components/AboutThree/AboutThree";
 
 function App() {
   return (
@@ -21,9 +22,10 @@ function App() {
       <CoreServices />
       <AboutUs />
       <AboutTwo />
+      <AboutThree />
       <Services />
       <TestiMonials />
-      <Counter />
+      {/* <Counter /> */}
       <Blog />
       <FAQ />
       <ContactUs />

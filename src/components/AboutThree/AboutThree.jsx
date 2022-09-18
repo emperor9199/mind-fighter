@@ -13,8 +13,11 @@ const AboutThree = () => {
           >
             <img
               src={about1}
-              className="rounded img-fluid d-block mx-auto"
+              className="rounded-circle img-fluid d-block mx-auto"
               alt="App"
+              style={{
+                width: "70%",
+              }}
             />
           </div>
           <div className="col-lg-1"></div>
