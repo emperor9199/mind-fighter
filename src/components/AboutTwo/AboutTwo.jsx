@@ -35,6 +35,11 @@ const AboutTwo = () => {
             />
           </div>
         </div>
+        <div className="row">
+          <div className="col-lg-12">
+            <div className="hr"></div>
+          </div>
+        </div>
       </div>
     </section>
   );
