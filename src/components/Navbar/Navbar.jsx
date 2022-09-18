@@ -1,8 +1,17 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Navbar.css";
 import logoImg from "../../images/mf_logo.jpeg";
+import $ from 'jquery';
 
 const Navbar = () => {
+
+  const [isOpenNav, setIsOpenNav] = useState(false);
+
+  function vishw(){
+    setIsOpenNav(!isOpenNav);
+    $('.header-area .nav').slideToggle(200);
+  }
+
   return (
     <header className="header-area header-sticky">
       <div className="container">
@@ -16,6 +25,7 @@ const Navbar = () => {
                   style={{
                     width: "4rem",
                     marginLeft: "1rem",
+                    display: isOpenNav ? "none" : "inline"
                   }}
                 />
               </a>
@@ -40,7 +50,7 @@ const Navbar = () => {
                   <a href="#contact-us">Contact Us</a>
                 </li>
               </ul>
-              <a className="menu-trigger">
+              <a className={isOpenNav ? "active menu-trigger" : "menu-trigger"} onClick={() => vishw()}>
                 <span>Menu</span>
               </a>
             </nav>
