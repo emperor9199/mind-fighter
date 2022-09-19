@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import logoImg from "../../images/mf_logo.jpeg";
+import logoImg from "../../images/logo1.png";
 import $ from "jquery";
 
 const Navbar = () => {
@@ -23,8 +23,9 @@ const Navbar = () => {
                     src={logoImg}
                     alt="The Mind Fighter"
                     style={{
-                      width: "4rem",
-                      marginLeft: "1rem",
+                      width: "3rem",
+                      marginLeft: "1.5rem",
+                      marginRight: ".7rem",
                       display: isOpenNav ? "none" : "inline",
                     }}
                   />
