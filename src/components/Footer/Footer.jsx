@@ -1,16 +1,15 @@
 import React from "react";
 import "./Footer.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
+  
   return (
     <footer className="site-footer">
       <div className="container">
         <div className="row">
           <div className="col-sm-12 col-md-6">
             <h6>About</h6>
-            <p className="text-justify">
+            <p className="text-justify col-10 col-xs-12">
               Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative to
               help the upcoming programmers with the code. Scanfcode focuses on
               providing the most efficient code or snippets as the code wants to
@@ -90,7 +89,7 @@ const Footer = () => {
             <ul className="social-icons">
               <li>
                 <a className="facebook" href="#">
-                  <FontAwesomeIcon icon="fa-brands fa-facebook" />
+                  <i className="fa fa-facebook" />
                 </a>
               </li>
               <li>
