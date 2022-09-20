@@ -8850,7 +8850,7 @@ button.bg-orange:focus {
 }
 
 .bg-lightblue {
-  background-color: #e8f3ec !important;
+  background-color: #f8e8e6 !important;
 }
 
 a.bg-lightblue:hover,
@@ -8869,23 +8869,23 @@ button.bg-lightblue:focus {
 }
 
 .border {
-  border: 1px solid #e8f3ec !important;
+  border: 1px solid #f8e8e6 !important;
 }
 
 .border-top {
-  border-top: 1px solid #e8f3ec !important;
+  border-top: 1px solid #f8e8e6 !important;
 }
 
 .border-right {
-  border-right: 1px solid #e8f3ec !important;
+  border-right: 1px solid #f8e8e6 !important;
 }
 
 .border-bottom {
-  border-bottom: 1px solid #e8f3ec !important;
+  border-bottom: 1px solid #f8e8e6 !important;
 }
 
 .border-left {
-  border-left: 1px solid #e8f3ec !important;
+  border-left: 1px solid #f8e8e6 !important;
 }
 
 .border-0 {
@@ -8969,7 +8969,7 @@ button.bg-lightblue:focus {
 }
 
 .border-lightblue {
-  border-color: #e8f3ec !important;
+  border-color: #f8e8e6 !important;
 }
 
 .border-white {
@@ -11747,7 +11747,7 @@ a.text-orange:focus {
 }
 
 .text-lightblue {
-  color: #e8f3ec !important;
+  color: #f8e8e6 !important;
 }
 
 a.text-lightblue:hover,
@@ -13958,7 +13958,7 @@ a.text-dark:hover {
 }
 
 .bg-lightblue {
-  fill: #e8f3ec !important;
+  fill: #f8e8e6 !important;
 }
 
 .card .date {
@@ -15149,11 +15149,12 @@ ul.ascii
 
 .blogMainImg {
   background-size: cover;
-  background-image: url("./images/blog1.jpg");
+  background-repeat: no-repeat;
+  background-image: url("./images/blogCover.jpg");
 }
 
 .blog-inner-container {
-  background-image: url("./images/blog2.jpg");
+  background-image: url("./images/blog1.jpg");
   height: 150px;
   background-size: cover;
   background-repeat: no-repeat;

@@ -51,10 +51,13 @@ const About = () => {
             <div class="sticky-top text-center">
               <div class="text-muted">Share this</div>
               <div class="share d-inline-block">
-                <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-                  <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
-                  <a class="a2a_button_facebook"></a>
-                  <a class="a2a_button_twitter"></a>
+                <div class="a2a_kit a2a_kit_size_32 a2a_default_style social-icons">
+                  <a className="facebook" href="#">
+                    <i className="fa fa-facebook" />
+                  </a>
+                  <a className="twitter" href="#">
+                    <i className="fa fa-twitter"></i>
+                  </a>
                 </div>
                 <script
                   async
@@ -159,7 +162,7 @@ const About = () => {
                 <div>
                   <small class="d-block">
                     <a class="text-muted" href="./author.html">
-                      Favid Rick
+                      Janki nayak
                     </a>
                   </small>
                   <small class="text-muted">Dec 12 · 5 min read</small>
@@ -177,9 +180,7 @@ const About = () => {
                       Nasa's IceSat space laser makes height maps of Earth
                     </a>
                   </h2>
-                  <div class="card-text text-muted small">
-                    Jake Bittle in LOVE/HATE
-                  </div>
+                  <div class="card-text text-muted small">Janki Nayak</div>
                   <small class="text-muted">Dec 12 · 5 min read</small>
                 </div>
               </div>
@@ -191,9 +192,7 @@ const About = () => {
                       Underwater museum brings hope to Lake Titicaca
                     </a>
                   </h2>
-                  <div class="card-text text-muted small">
-                    Jake Bittle in LOVE/HATE
-                  </div>
+                  <div class="card-text text-muted small">Janki Nayak</div>
                   <small class="text-muted">Dec 12 · 5 min read</small>
                 </div>
               </div>
@@ -205,9 +204,7 @@ const About = () => {
                       Sun-skimming probe starts calling home
                     </a>
                   </h2>
-                  <div class="card-text text-muted small">
-                    Jake Bittle in LOVE/HATE
-                  </div>
+                  <div class="card-text text-muted small">Janki Nayak</div>
                   <small class="text-muted">Dec 12 · 5 min read</small>
                 </div>
               </div>

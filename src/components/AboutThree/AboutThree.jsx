@@ -23,7 +23,7 @@ const AboutThree = () => {
           <div className="col-lg-1"></div>
           <div className="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-top-fix">
             <div className="left-heading">
-              <h2 className="section-title">Janki Naya - Founder</h2>
+              <h2 className="section-title">Janki Nayar - Founder</h2>
             </div>
             <div className="left-text">
               <p>
@@ -33,7 +33,7 @@ const AboutThree = () => {
                 psychological counsellor in INDIAN AIR FORCE. Apart from that
                 she has experience in working in NGO and helped children to gain
                 motivation, as well as those having suicidal tendencies,
-                physical abuse and parents counselling. Solved cases of
+                physical abuse and parents counselling. Solved cases of   
                 depression, anxiety, stress, family issues, couple issues and
                 many others. She is a certified yoga trainer.
               </p>
