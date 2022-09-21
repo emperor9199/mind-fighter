@@ -60,6 +60,18 @@
 .copyright-text {
   margin: 0;
 }
+.phone-link{
+  text-align: right;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 6px;
+  margin-right: 0;
+  border-radius: 100%;
+  background-color: #f8e8e6;
+  color: #96a2b2;
+  
+}
 @media (max-width: 991px) {
   .site-footer [class^="col-"] {
     margin-bottom: 30px;
@@ -128,6 +140,9 @@
 }
 .social-icons a.dribbble:hover {
   background-color: #ff8300;
+}
+.service-link-hover > li:hover {
+  color: #29aafe;
 }
 
 @media (max-width: 767px) {

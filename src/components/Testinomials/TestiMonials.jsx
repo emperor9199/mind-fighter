@@ -84,7 +84,7 @@ const TestiMonials = () => {
     return (
         <section id="testimonial" className="testimonials pt-70 pb-70">
             <div className="container mt-5 mb-5">
-                <h4 className="miniTitle text-center">TESTIMONIALS</h4>
+                <h4 className="miniTitle text-center">FEEDBACK</h4>
                 <div className="row">
                     <div className="col-md-12">
                         <OwlCarousel id="customer-testimonoals" className="owl-carousel owl-theme" {...options}>

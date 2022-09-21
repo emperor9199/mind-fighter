@@ -17,9 +17,8 @@ const Blog = () => {
           <div className="offset-lg-3 col-lg-6">
             <div className="center-text">
               <p>
-                Integer molestie aliquam gravida. Nullam nec arcu finibus,
-                imperdiet nulla vitae, placerat nibh. Cras maximus venenatis
-                molestie.
+              It is very important to understand the meaning of counseling as people are not aware of it.
+Meaning of counseling: Counselling is to assist someone to solve their personal or professional or any
               </p>
             </div>
           </div>
@@ -36,10 +35,9 @@ const Blog = () => {
                   <a href="#">Blog 1</a>
                 </h3>
                 <div className="text">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab,
-                  ullam! Iusto at fugiat maxime maiores quod neque nobis quos
-                  atque explicabo et cumque voluptatem, commodi eius, delectus
-                  nam dicta. Incidunt!
+                It is very important to understand the meaning of counseling as people are not aware of it.
+Meaning of counseling: Counselling is to assist someone to solve their personal or professional or any
+other problem on their own...
                 </div>
                 <a href="#" className="main-button">
                   Read More
@@ -57,10 +55,8 @@ const Blog = () => {
                   <a href="#">Blog 2</a>
                 </h3>
                 <div className="text">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis
-                  nesciunt impedit ratione! Deserunt accusantium deleniti sunt
-                  veniam maxime quibusdam esse assumenda in, incidunt
-                  necessitatibus dolor sed ad tempore debitis
+                It is very important to know a little bit about suicide and suicidal thoughts before we directly jump onto
+the ways of preventing suicidal thoughts. Nowadays we read and hear about people committing...
                 </div>
                 <a href="#" className="main-button">
                   Read More
@@ -78,10 +74,9 @@ const Blog = () => {
                   <a href="#">Blog 3</a>
                 </h3>
                 <div className="text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
-                  porro placeat optio deleniti illum sunt perspiciatis, sequi
-                  rerum sed! Mollitia velit, facere officia ad natus asperiores
-                  inventore tempora laborum libero.
+                When we talk about the life of people before the pandemic, it is very different from now. When we
+think about a pandemic, the first thing that comes to mind is a lockdown in the whole country, the
+deaths of so many people...
                 </div>
                 <a href="#" className="main-button">
                   Read More
