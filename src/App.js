@@ -55,6 +55,16 @@ function App() {
         <Route path="/blogs" element={<BlogPage />} />
         <Route path="/article" element={<Article />} />
         <Route path="/service" element={<ServicePage />} />
+        <Route
+          path="*"
+          element={
+            <Home
+              aboutSection={aboutSection}
+              serviceSection={serviceSection}
+              contcatSection={contcatSection}
+            />
+          }
+        />
       </Routes>
       <Footer />
     </BrowserRouter>
