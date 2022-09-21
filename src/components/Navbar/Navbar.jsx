@@ -1,10 +1,34 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./Navbar.css";
 import logoImg from "../../images/logo1.png";
 import $ from "jquery";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ scrollDown, scrollService, scrollContact }) => {
   const [isOpenNav, setIsOpenNav] = useState(false);
+  let history = useNavigate();
+
+  const redirectToAbout = () => {
+    history("/");
+    setTimeout(() => {
+      scrollDown();
+    }, 500);
+  };
+
+  const redirectToService = () => {
+    history("/");
+    setTimeout(() => {
+      scrollService();
+    }, 500);
+  };
+
+  const redirectToContact = () => {
+    history("/");
+    setTimeout(() => {
+      scrollContact();
+    }, 500);
+  };
 
   function toggle() {
     setIsOpenNav(!isOpenNav);
@@ -17,7 +41,7 @@ const Navbar = () => {
         <div className="row">
           <div className="col-12">
             <nav className="main-nav d-flex flex-row justify-content-between align-items-center">
-              <a href="#">
+              <Link to="/">
                 <div className="d-flex flex-row justify-content-between align-items-center">
                   <img
                     src={logoImg}
@@ -36,26 +60,26 @@ const Navbar = () => {
                     The Mind Fighter
                   </p>
                 </div>
-              </a>
+              </Link>
 
               <ul className="nav">
                 <li>
-                  <a href="#welcome" className="active">
+                  <Link className="active" to="/">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#features">About</a>
+                  <a onClick={redirectToAbout}>About</a>
                 </li>
 
                 <li>
-                  <a href="#blog">Blog</a>
+                  <Link to="/blogs">Blog</Link>
                 </li>
                 <li>
-                  <a href="#work-process">Services</a>
+                  <a onClick={redirectToService}>Services</a>
                 </li>
                 <li>
-                  <a href="#contact-us">Contact Us</a>
+                  <a onClick={redirectToContact}>Contact Us</a>
                 </li>
               </ul>
               <a
