@@ -25,7 +25,7 @@ const FAQ = () => {
                 <summary>What is The Mind Fighter?</summary>
                 <div className="faq__content">
                   <p>
-                    The Mind Fighter is an online counseling service whose main
+                    The Mind Fighter is an online counselling service whose main
                     goal is to help people who are unable to fight their
                     different battles in life. Its purpose is just like its name
                     i.e., to fight the
@@ -35,12 +35,12 @@ const FAQ = () => {
 
               <details>
                 <summary>
-                  The online counseling service of The Mind Fighter is it secure
+                  The online counselling service of The Mind Fighter is it secure
                   and confidential?
                 </summary>
                 <div className="faq__content">
                   <p>
-                    The counseling services provided to the clients will be
+                    The counselling services provided to the clients will be
                     highly confidential. No information will be shared regarding
                     the client as well as their problem. Feel free to share your
                     problem.
@@ -65,7 +65,7 @@ const FAQ = () => {
                     The qualification of the counselor is M.Sc. in Forensic
                     Psychology and M.A in Counselling. She is highly experienced
                     in handling different types of cases that include
-                    depression, anxiety, couple counseling, and so forth. Have
+                    depression, anxiety, couple counselling, and so forth. Have
                     good experience in the Indian Airforce as a psychological
                     counselor.
                   </p>
@@ -76,8 +76,8 @@ const FAQ = () => {
                 <summary>What is different about The Mind Fighter?</summary>
                 <div className="faq__content">
                   <p>
-                    Along with other counseling services, we provide
-                    victim-based counseling for those who have been victims of
+                    Along with other counselling services, we provide
+                    victim-based counselling for those who have been victims of
                     rape, sexual abuse, molestation, and domestic abuse.
                   </p>
                 </div>
@@ -85,13 +85,13 @@ const FAQ = () => {
 
               <details>
                 <summary>
-                  How many minimum counseling sessions are required?
+                  How many minimum counselling sessions are required?
                 </summary>
                 <div className="faq__content">
                   <p>
-                    A minimum of six sessions are provided in counseling but if
+                    A minimum of six sessions are provided in counselling but if
                     it is required then we do go along with further sessions.
-                    But the counseling session can also be for short-term
+                    But the counselling session can also be for short-term
                     depending on the type of issue.
                   </p>
                 </div>

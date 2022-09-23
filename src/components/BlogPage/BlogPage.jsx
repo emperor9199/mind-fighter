@@ -23,10 +23,10 @@ const BlogPage = () => {
                   Rising need for Counselling
                 </h1>
                 <p class="mb-3 text-justify mr-3">
-                  It is very important to understand the meaning of counseling
-                  as people are not aware of it. Meaning of counseling:
+                  It is very important to understand the meaning of counselling
+                  as people are not aware of it. Meaning of counselling:
                   Counselling is to assist someone to solve their personal or
-                  professional or any other problem on their own. Counseling is
+                  professional or any other problem on their own. counselling is
                   something that can be for a person having day-to-day life
                   problems as well as someone who has some mental health issue.
                   In today’s fast world people are running here and there to
@@ -59,8 +59,8 @@ const BlogPage = () => {
                   </Link>
                 </h2>
                 <p class="card-text">
-                It is very important to understand the meaning of counseling as people are not aware of it.
-Meaning of counseling: 
+                It is very important to understand the meaning of counselling as people are not aware of it.
+Meaning of counselling: 
                 </p>
                 <div>
                   <small class="d-block">

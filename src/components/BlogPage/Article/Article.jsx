@@ -24,10 +24,10 @@ const Article = () => {
                   Rising need for Counselling
                 </h1>
                 <p class="mb-3">
-                  It is very important to understand the meaning of counseling
-                  as people are not aware of it. Meaning of counseling:
+                  It is very important to understand the meaning of counselling
+                  as people are not aware of it. Meaning of counselling:
                   Counselling is to assist someone to solve their personal or
-                  professional or any other problem on their own. Counseling is
+                  professional or any other problem on their own. counselling is
                   something that can be for a person having day-to-day life
                   problems as well as someone who has some mental health issue.
                   In today’s fast world people are running here and there to
@@ -79,7 +79,7 @@ const Article = () => {
           <div class="col-md-12 col-lg-8">
             <article class="article-post">
               <p>
-                Through counseling, a person can understand the problem
+                Through counselling, a person can understand the problem
                 affecting their life and they can come up with some solution.
                 The main thing about which people need to get aware is about
                 being aware of their negative emotions instead of neglecting
@@ -87,9 +87,9 @@ const Article = () => {
               </p>
               <p>
                 One can cope with personal life problems such as family
-                counseling, couple counseling, relationship counseling, and
-                individual counseling. There are other areas like employee
-                counseling, sports counseling, student counseling, and many
+                counselling, couple counselling, relationship counselling, and
+                individual counselling. There are other areas like employee
+                counselling, sports counselling, student counselling, and many
                 more. There are employees in the companies who are stressed due
                 to their work and somehow it affects his/ her life relations
                 which results in a poor relationship with family and leads to
@@ -100,12 +100,12 @@ const Article = () => {
               </p>
               <p>
                 Nowadays people are facing depression, anxiety, stress, and
-                tension for which counseling can be helpful for people to come
+                tension for which counselling can be helpful for people to come
                 up with it.
               </p>
               <p>
                 Hence, it’s high time for people to understand the concept of
-                counseling and to go to a therapist or counselor whenever they
+                counselling and to go to a therapist or counselor whenever they
                 feel the need for it instead of neglecting it.
               </p>
             </article>

@@ -18,7 +18,7 @@ const Blog = () => {
           <div className="offset-lg-3 col-lg-6">
             <div className="center-text">
               <p>
-              It is very important to understand the meaning of counseling as people are not aware of it.
+              It is very important to understand the meaning of counselling as people are not aware of it.
               </p>
             </div>
           </div>
@@ -35,8 +35,8 @@ const Blog = () => {
                   <a href="javascript:;">RISING NEED FOR COUNSELLING</a>
                 </h3>
                 <div className="text">
-                It is very important to understand the meaning of counseling as people are not aware of it.
-Meaning of counseling: Counselling is to assist someone to solve their personal or professional or any
+                It is very important to understand the meaning of counselling as people are not aware of it.
+Meaning of counselling: Counselling is to assist someone to solve their personal or professional or any
 other problem on their own...
                 </div>
                   <Link className="main-button" to="/article">Read More</Link>                  

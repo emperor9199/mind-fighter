@@ -36,13 +36,13 @@ const TestiMonials = () => {
     },
     {
       name: "Dharnee Patel",
-      description: "I highly recommend counseling from Ms. Janki as she is empathetic, nonjudgmental, and understanding. It was easy to share my problem with her and she helped to overcome my anxiety with her counseling.",
+      description: "I highly recommend counselling from Ms. Janki as she is empathetic, nonjudgmental, and understanding. It was easy to share my problem with her and she helped to overcome my anxiety with her counselling.",
       address: "Software Engineer",
       img: dharanee,
     },
     {
       name: "Luiza DSouza",
-      description: "I was under severe stress, and it was affecting my personal and professional life. After, meeting Ms. Janki I felt relieved as she helped me to cope with stress through stress management. With the help of meditation and counseling provided by her, I finally came out of my stress. I felt very safe and peaceful talking to her, highly recommend taking sessions from The Mind Fighter.",
+      description: "I was under severe stress, and it was affecting my personal and professional life. After, meeting Ms. Janki I felt relieved as she helped me to cope with stress through stress management. With the help of meditation and counselling provided by her, I finally came out of my stress. I felt very safe and peaceful talking to her, highly recommend taking sessions from The Mind Fighter.",
       address: "Export Executive",
       img: luiza,
     },
