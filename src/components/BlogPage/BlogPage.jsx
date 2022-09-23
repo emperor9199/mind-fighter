@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./BlogPage.css";
 import imgTest1 from "../../images/blog1.jpg";
 import imgTest2 from "../../images/blog2.jpg";
@@ -6,6 +6,12 @@ import imgTest2 from "../../images/blog2.jpg";
 import { Outlet, Link } from "react-router-dom";
 
 const BlogPage = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
+
   return (
     <>
       <div class="container blog-main-container">
@@ -49,13 +55,12 @@ const BlogPage = () => {
               <div class="card-body px-0 pb-0 d-flex flex-column align-items-start">
                 <h2 class="h4 font-weight-bold">
                   <Link class="text-dark" to="/article">
-                    Brain Stimulation Relieves Depression Symptoms
+                  RISING NEED FOR COUNSELLING
                   </Link>
                 </h2>
                 <p class="card-text">
-                  Researchers have found an effective target in the brain for
-                  electrical stimulation to improve mood in people suffering
-                  from depression.
+                It is very important to understand the meaning of counseling as people are not aware of it.
+Meaning of counseling: 
                 </p>
                 <div>
                   <small class="d-block">
@@ -115,7 +120,7 @@ const BlogPage = () => {
         <div class="row justify-content-between">
           <div class="col-md-8">
             <h5 class="font-weight-bold spanborder">
-              <span>All Stories</span>
+              <span>All Blogs</span>
             </h5>
             <div class="mb-3 d-flex justify-content-between">
               <div class="pr-3">

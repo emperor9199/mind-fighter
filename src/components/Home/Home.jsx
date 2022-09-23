@@ -11,21 +11,21 @@ import ContactUs from "../ContactUs/ContactUs";
 import FAQ from "../FAQ/FAQ";
 import AboutThree from "../AboutThree/AboutThree";
 
-const Home = () => {
+const Home = ({aboutSection, serviceSection, contcatSection}) => {
   return (
     <>
       {" "}
       <HeroSection />
       <CoreServices />
-      <AboutUs />
+      <AboutUs aboutSection={aboutSection}/>
       <AboutTwo />
       <AboutThree />
-      <Services />
+      <Services serviceSection={serviceSection}/>
       <TestiMonials />
       {/* <Counter /> */}
       <Blog />
       <FAQ />
-      <ContactUs />
+      <ContactUs contcatSection={contcatSection}/>
     </>
   );
 };

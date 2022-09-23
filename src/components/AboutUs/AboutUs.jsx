@@ -2,9 +2,9 @@ import React from "react";
 import "./AboutUs.css";
 import about1 from "../../images/about1.svg";
 
-const AboutUs = () => {
+const AboutUs = ({aboutSection}) => {
   return (
-    <section className="section padding-top-70 padding-bottom-0" id="features">
+    <section className="section padding-top-70 padding-bottom-0" id="features" ref={aboutSection}>
       <div className="container">
         <div className="row">
           <div

@@ -7,9 +7,9 @@ import victimImg from "../../images/victim1.png";
 import mentalHealthImg from "../../images/mental2.png";
 import yogaImg from "../../images/yoga1.png";
 
-const Services = () => {
+const Services = ({serviceSection}) => {
   return (
-    <section className="mini" id="work-process">
+    <section className="mini" ref={serviceSection}>
       <div className="mini-content">
         <div className="container">
           <div className="row">

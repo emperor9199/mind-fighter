@@ -1,9 +1,9 @@
 import React from "react";
 import "./ContactUs.css";
 
-const ContactUs = () => {
+const ContactUs = ({contcatSection}) => {
   return (
-    <section className="section colored" id="contact-us">
+    <section className="section colored" ref={contcatSection}>
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
@@ -11,11 +11,11 @@ const ContactUs = () => {
               <h2 className="section-title">Book a Slot</h2>
             </div>
           </div>
-          <div className="offset-lg-3 col-lg-6">
+          {/* <div className="offset-lg-3 col-lg-6">
             <div className="center-text">
               <p>The Mind Fighter – Attract Your Thoughts into Action</p>
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="row">
@@ -58,6 +58,32 @@ const ContactUs = () => {
                         className="form-control"
                         id="email"
                         placeholder="E-Mail Address"
+                        required=""
+                      />
+                    </fieldset>
+                  </div>
+
+                  <div className="col-lg-6 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input
+                        name="Phone"
+                        type="Phone"
+                        className="form-control"
+                        id="Phone"
+                        placeholder="Contact Number"
+                        required=""
+                      />
+                    </fieldset>
+                  </div>
+
+                  <div className="col-lg-6 col-md-12 col-sm-12">
+                    <fieldset>
+                      <input
+                        name="Date"
+                        type="Date"
+                        className="form-control"
+                        id="Date"
+                        placeholder="Select Date Time"
                         required=""
                       />
                     </fieldset>

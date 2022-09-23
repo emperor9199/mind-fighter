@@ -2,49 +2,43 @@ import React from "react";
 import "./Footer.css";
 
 const Footer = () => {
-  
   return (
     <footer className="site-footer">
       <div className="container">
         <div className="row">
           <div className="col-sm-12 col-md-6">
             <h6>About</h6>
-            <p className="text-justify col-10 col-xs-12">
-              Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative to
-              help the upcoming programmers with the code. Scanfcode focuses on
-              providing the most efficient code or snippets as the code wants to
-              be simple. We will help programmers build up concepts in different
-              programming languages that include C, C++, Java, HTML, CSS,
-              Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.
+            <p className="text-justify col-10 pl-0">
+              The main aim is to help through counselling and psychological
+              therapies in holistic way. We use psychological tests to assess
+              the client as per the need. Our services will be provided though
+              video calls, mails, calls, chats, and offline counselling in
+              special cases. We ensure you for 100% confidentiality. We are here
+              to hear and understand you to help with professional guidance and
+              counselling.
             </p>
           </div>
 
           <div className="col-xs-6 col-md-3">
             <h6>Services</h6>
-            <ul className="footer-links">
+            <ul className="footer-links service-link-hover">
               <li>
-                <a href="http://scanfcode.com/category/c-language/">C</a>
+                C
               </li>
               <li>
-                <a href="http://scanfcode.com/category/front-end-development/">
                   UI Design
-                </a>
               </li>
               <li>
-                <a href="http://scanfcode.com/category/back-end-development/">
                   PHP
-                </a>
               </li>
               <li>
-                <a href="http://scanfcode.com/category/java-programming-language/">
                   Java
-                </a>
               </li>
               <li>
-                <a href="http://scanfcode.com/category/android/">Android</a>
+                Android
               </li>
               <li>
-                <a href="http://scanfcode.com/category/templates/">Templates</a>
+                Templates
               </li>
             </ul>
           </div>
@@ -53,23 +47,20 @@ const Footer = () => {
             <h6>Quick Links</h6>
             <ul className="footer-links">
               <li>
-                <a href="http://scanfcode.com/about/">About Us</a>
+                <a href="#features">About</a>
               </li>
               <li>
-                <a href="http://scanfcode.com/contact/">Contact Us</a>
+                <a href="#contact-us">Contact Us</a>
               </li>
               <li>
-                <a href="http://scanfcode.com/contribute-at-scanfcode/">
-                  Contribute
+                <a href="#work-process">
+                  Services
                 </a>
               </li>
               <li>
                 <a href="http://scanfcode.com/privacy-policy/">
-                  Privacy Policy
+                  Blogs
                 </a>
-              </li>
-              <li>
-                <a href="http://scanfcode.com/sitemap/">Sitemap</a>
               </li>
             </ul>
           </div>
@@ -78,15 +69,25 @@ const Footer = () => {
       </div>
       <div className="container">
         <div className="row">
-          <div className="col-md-8 col-sm-6 col-xs-12">
+          <div className="col-md-4 col-sm-5 col-xs-12">
             <p className="copyright-text">
               Copyright &copy; 2022 All Rights Reserved by
               <a href="#"> The Mind Fighter</a>.
             </p>
           </div>
 
+          <div className="col-md-4 col-sm-1 col-xs-12 copyright-text ">
+            Contact:<span className="ml-1">+91-789787878</span> 
+          </div>
+
           <div className="col-md-4 col-sm-6 col-xs-12">
+            
             <ul className="social-icons">
+            <li>
+                <a className="facebook" href="#">
+                  <i className="fa fa-whatsapp" />
+                </a>
+              </li>
               <li>
                 <a className="facebook" href="#">
                   <i className="fa fa-facebook" />

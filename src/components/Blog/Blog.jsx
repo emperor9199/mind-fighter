@@ -3,6 +3,7 @@ import "./Blog.css";
 import blog1 from "../../images/blog1.jpg";
 import blog2 from "../../images/blog2.jpg";
 import blog3 from "../../images/blog3.jpg";
+import { Link } from "react-router-dom";
 
 const Blog = () => {
   return (
@@ -11,15 +12,13 @@ const Blog = () => {
         <div className="row">
           <div className="col-lg-12">
             <div className="center-heading">
-              <h2 className="section-title">Blog Entries</h2>
+              <h2 className="section-title">Blogs</h2>
             </div>
           </div>
           <div className="offset-lg-3 col-lg-6">
             <div className="center-text">
               <p>
-                Integer molestie aliquam gravida. Nullam nec arcu finibus,
-                imperdiet nulla vitae, placerat nibh. Cras maximus venenatis
-                molestie.
+              It is very important to understand the meaning of counseling as people are not aware of it.
               </p>
             </div>
           </div>
@@ -33,17 +32,14 @@ const Blog = () => {
               </div>
               <div className="blog-content">
                 <h3>
-                  <a href="#">Blog 1</a>
+                  <a href="javascript:;">RISING NEED FOR COUNSELLING</a>
                 </h3>
                 <div className="text">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab,
-                  ullam! Iusto at fugiat maxime maiores quod neque nobis quos
-                  atque explicabo et cumque voluptatem, commodi eius, delectus
-                  nam dicta. Incidunt!
+                It is very important to understand the meaning of counseling as people are not aware of it.
+Meaning of counseling: Counselling is to assist someone to solve their personal or professional or any
+other problem on their own...
                 </div>
-                <a href="#" className="main-button">
-                  Read More
-                </a>
+                  <Link className="main-button" to="/article">Read More</Link>                  
               </div>
             </div>
           </div>
@@ -54,17 +50,13 @@ const Blog = () => {
               </div>
               <div className="blog-content">
                 <h3>
-                  <a href="#">Blog 2</a>
+                  <a href="javascript:;">Ways to prevent Suicidal thoughts</a>
                 </h3>
                 <div className="text">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis
-                  nesciunt impedit ratione! Deserunt accusantium deleniti sunt
-                  veniam maxime quibusdam esse assumenda in, incidunt
-                  necessitatibus dolor sed ad tempore debitis
+                It is very important to know a little bit about suicide and suicidal thoughts before we directly jump onto
+the ways of preventing suicidal thoughts. Nowadays we read and hear about people committing...
                 </div>
-                <a href="#" className="main-button">
-                  Read More
-                </a>
+                <Link className="main-button" to="/article">Read More</Link>     
               </div>
             </div>
           </div>
@@ -75,17 +67,14 @@ const Blog = () => {
               </div>
               <div className="blog-content">
                 <h3>
-                  <a href="#">Blog 3</a>
+                  <a href="javascript:;">Effects of Covid -19 on people’s lives.</a>
                 </h3>
                 <div className="text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
-                  porro placeat optio deleniti illum sunt perspiciatis, sequi
-                  rerum sed! Mollitia velit, facere officia ad natus asperiores
-                  inventore tempora laborum libero.
+                When we talk about the life of people before the pandemic, it is very different from now. When we
+think about a pandemic, the first thing that comes to mind is a lockdown in the whole country, the
+deaths of so many people...
                 </div>
-                <a href="#" className="main-button">
-                  Read More
-                </a>
+                <Link className="main-button" to="/article">Read More</Link>     
               </div>
             </div>
           </div>
