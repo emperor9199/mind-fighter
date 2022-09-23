@@ -16,7 +16,7 @@ const TestiMonials = () => {
     {
       name: "Sneha",
       description:
-        "It was a pleasant experience with you because you didn’t care much about the fees (even though you have the right to) and focused more on my mental health. You are easil approachable, and I honestly feel safe talking to you. Thank you for being there when I needed you the most.",
+        "It was a pleasant experience with you because you didn’t care much about the fees (even though you have the right to) and focused more on my mental health. You are easily approachable, and I honestly feel safe talking to you. Thank you for being there when I needed you the most.",
       address: "Private Secretary",
       img: sneha,
     },

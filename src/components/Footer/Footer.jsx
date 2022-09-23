@@ -77,7 +77,7 @@ const Footer = () => {
           </div>
 
           <div className="col-md-4 col-sm-1 col-xs-12 copyright-text ">
-            Contact:<span className="ml-1">+91-789787878</span> 
+            Contact:<span className="ml-1">+91-9979555154</span> 
           </div>
 
           <div className="col-md-4 col-sm-6 col-xs-12">

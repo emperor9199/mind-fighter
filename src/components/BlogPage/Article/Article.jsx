@@ -48,7 +48,7 @@ const Article = () => {
                     height="70"
                   />
                   <small class="ml-2">
-                    Janki Nayar
+                    Janki Nayak
                     <span class="text-muted d-block">
                       A few hours ago &middot; 5 min. read
                     </span>
@@ -135,7 +135,7 @@ const Article = () => {
                 <div>
                   <small class="d-block">
                     <a class="text-muted" href="./author.html">
-                      Janki nayak
+                      Janki Nayak
                     </a>
                   </small>
                   <small class="text-muted">Dec 12 · 5 min read</small>

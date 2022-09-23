@@ -162,7 +162,7 @@ const About = () => {
                 <div>
                   <small class="d-block">
                     <a class="text-muted" href="./author.html">
-                      Janki nayak
+                      Janki Nayak
                     </a>
                   </small>
                   <small class="text-muted">Dec 12 · 5 min read</small>
