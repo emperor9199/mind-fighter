@@ -8,7 +8,7 @@ const ContactUs = () => {
         <div className="row">
           <div className="col-lg-12">
             <div className="center-heading">
-              <h2 className="section-title">Talk To Us</h2>
+              <h2 className="section-title">Book a Slot</h2>
             </div>
           </div>
           <div className="offset-lg-3 col-lg-6">
