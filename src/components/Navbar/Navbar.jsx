@@ -54,8 +54,8 @@ const Navbar = ({ scrollDown, scrollService, scrollContact }) => {
                     }}
                   />
                   <p
-                    className="mb-0 text-dark h5 mx-2"
-                    style={{ fontWeight: "bold", fontSize:"1.6rem",  textTransform: "uppercase", fontFamily: "Lovelo, sans-serif", border: "1px solid gray" }}
+                    className="mb-0 text-dark h5 mx-2 pt-2"
+                    style={{ fontWeight: "bold", fontSize:"2rem",  textTransform: "uppercase", fontFamily: "Lovelo, sans-serif"}}
                   >
                     The Mind Fighter
                   </p>

@@ -18,7 +18,8 @@ const Blog = () => {
           <div className="offset-lg-3 col-lg-6">
             <div className="center-text">
               <p>
-              It is very important to understand the meaning of counselling as people are not aware of it.
+                It is very important to understand the meaning of counselling as
+                people are not aware of it.
               </p>
             </div>
           </div>
@@ -35,11 +36,14 @@ const Blog = () => {
                   <a href="javascript:;">RISING NEED FOR COUNSELLING</a>
                 </h3>
                 <div className="text">
-                It is very important to understand the meaning of counselling as people are not aware of it.
-Meaning of counselling: Counselling is to assist someone to solve their personal or professional or any
-other problem on their own...
+                  It is very important to understand the meaning of counselling
+                  as people are not aware of it. Meaning of counselling:
+                  Counselling is to assist someone to solve their personal or
+                  professional or any other problem on their own...
                 </div>
-                  <Link className="main-button" to="/article">Read More</Link>                  
+                <Link className="main-button" to="/article">
+                  Read More
+                </Link>
               </div>
             </div>
           </div>
@@ -53,10 +57,14 @@ other problem on their own...
                   <a href="javascript:;">Ways to prevent Suicidal thoughts</a>
                 </h3>
                 <div className="text">
-                It is very important to know a little bit about suicide and suicidal thoughts before we directly jump onto
-the ways of preventing suicidal thoughts. Nowadays we read and hear about people committing...
+                  It is very important to know a little bit about suicide and
+                  suicidal thoughts before we directly jump onto the ways of
+                  preventing suicidal thoughts. Nowadays we read and hear about
+                  people committing...
                 </div>
-                <Link className="main-button" to="/article">Read More</Link>     
+                <Link className="main-button" to="/article">
+                  Read More
+                </Link>
               </div>
             </div>
           </div>
@@ -67,14 +75,19 @@ the ways of preventing suicidal thoughts. Nowadays we read and hear about people
               </div>
               <div className="blog-content">
                 <h3>
-                  <a href="javascript:;">Effects of Covid -19 on people’s lives.</a>
+                  <a href="javascript:;">
+                    Effects of Covid -19 on people’s lives.
+                  </a>
                 </h3>
                 <div className="text">
-                When we talk about the life of people before the pandemic, it is very different from now. When we
-think about a pandemic, the first thing that comes to mind is a lockdown in the whole country, the
-deaths of so many people...
+                  When we talk about the life of people before the pandemic, it
+                  is very different from now. When we think about a pandemic,
+                  the first thing that comes to mind is a lockdown in the whole
+                  country, the deaths of so many people...
                 </div>
-                <Link className="main-button" to="/article">Read More</Link>     
+                <Link className="main-button" to="/article">
+                  Read More
+                </Link>
               </div>
             </div>
           </div>
