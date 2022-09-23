@@ -21,10 +21,12 @@ const CoreServices = () => {
                       <img src={depressionImg} alt="" />
                     </i>
                   </div>
-                  <h5 className="features-title">Depression counselling</h5>
+                  <h5 className="features-title">Mental Health Counselling</h5>
                   <p>
-                    Depression is a serious mood disorder, with an estimated 1
-                    million Indian adults have it
+                    It is very important to take care of mental health as it can
+                    affect our daily lives. Just like we take care of our
+                    physical health in the same way we should also take care of
+                    our mental health.
                   </p>
                 </div>
               </div>
@@ -40,8 +42,10 @@ const CoreServices = () => {
                   </div>
                   <h5 className="features-title">Relationship counselling</h5>
                   <p>
-                    Premarital counseling is a type of relationship therapy that
-                    helps prepare couples.
+                    When it comes to a relationship there are various things
+                    like trust, transparency, communication, honesty, and
+                    compatibility that help to make the relationship strong,
+                    healthy, and lively.
                   </p>
                 </div>
               </div>
@@ -57,8 +61,10 @@ const CoreServices = () => {
                   </div>
                   <h5 className="features-title">Corporate counselling</h5>
                   <p>
-                    Corporate counseling is the process of counseling the
-                    parties having differences.
+                    In today’s racing life people get themselves so engrossed in
+                    work that somehow, they forget to take care of their mental
+                    health. One can work more effectively if they are mentally
+                    healthy.
                   </p>
                 </div>
               </div>
