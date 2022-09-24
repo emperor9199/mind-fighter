@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./Article.css";
 import imgTest from "../../../images/inner-blog.jpg";
 import jankiImg from "../../../images/pic.jpg";
@@ -7,6 +7,10 @@ import imgTest2 from "../../../images/blog2.jpg";
 import imgTest3 from "../../../images/blog1.jpg";
 
 const Article = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, )
+  
   return (
     <>
       <div class="container x-container">

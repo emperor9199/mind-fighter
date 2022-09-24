@@ -28,7 +28,7 @@ const BlogDetail = () => {
 
   return (
     <div className="blog_detail_container">
-      <div className="blog_detail_pills">
+      <div className="blog_detail_pills center-pill">
         {categories?.map((category) => {
           return (
             <button

@@ -80,3 +80,77 @@
     transform-origin: 50% 50% 0;
     transition: all 250ms ease-out 0s;
 }
+
+/* new design */
+
+.snip1515 {
+    font-family: 'Open Sans', Arial, sans-serif;
+    position: relative;
+    margin: 10px;
+    width: 400px;
+    color: #000000;
+    text-align: center;
+    line-height: 1.4em;
+    font-size: 14px;
+    box-shadow: none !important;
+    overflow: hidden;
+  }
+
+  .shadow-effect-card{
+    height: 21rem;
+    overflow: hidden;
+  }
+  
+  .snip1515 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .snip1515 .profile-image {
+    display: inline-block;
+    z-index: 1;
+    position: relative;
+    padding: 10px;
+    border: 2px solid #e8b563;
+    border-radius: 100%
+  }
+  
+  .snip1515 .profile-image img {
+   width: 6rem;
+    height: 6rem;
+    vertical-align: top;
+    border-radius: 200%
+  }
+  
+  .snip1515 figcaption {
+    width: 100%;
+    background-color: #F2F2F2;
+    color: #555;
+    padding: 70px 25px 25px; 
+    margin-top: -60px;
+    display: inline-block;
+  }
+  
+  .snip1515 h3,
+  .snip1515 h4,
+  .snip1515 p {
+    margin: 0 0 5px; 
+  }
+  
+  .snip1515 h3 {
+    font-weight: 600;
+    font-size: 1.3em;
+    font-family: 'Playfair Display', Arial, sans-serif;
+  }
+  
+  .snip1515 h4 {
+    color: #8c8c8c;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+  
+  .snip1515 p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    opacity: 0.9;
+  }

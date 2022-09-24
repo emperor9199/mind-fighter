@@ -1,3 +1,9 @@
 .blog_detail_container {
   margin: 2rem 1rem;
 }
+
+.center-pill{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
