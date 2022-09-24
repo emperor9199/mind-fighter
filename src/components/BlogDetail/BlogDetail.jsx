@@ -12,13 +12,19 @@ const BlogDetail = () => {
 
   console.log("categoryDAta", categoryData);
 
-  useEffect(() => {
+  // useEffect(() => {
+  //   setCategoryData(
+  //     blogData.filter((item) => item.category === selectedCategory)
+  //   );
+
+  //   console.log("inside useeffect");
+  // }, [categories]);
+
+  const ax = () => {
     setCategoryData(
       blogData.filter((item) => item.category === selectedCategory)
     );
-
-    console.log("inside useeffect");
-  }, [categories]);
+  };
 
   return (
     <div className="blog_detail_container">
@@ -27,7 +33,10 @@ const BlogDetail = () => {
           return (
             <button
               className="read_more mx-3"
-              onClick={() => setSelectedCategory(category)}
+              onClick={() => {
+                setSelectedCategory(category);
+                ax();
+              }}
             >
               {category}
             </button>

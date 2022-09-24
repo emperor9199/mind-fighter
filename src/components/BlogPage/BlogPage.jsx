@@ -28,7 +28,9 @@ const BlogPage = () => {
               deleniti optio ex voluptates, laborum fugiat aliquam explicabo
               porro at consectetur maxime nulla quaerat quia. Fugit.
             </p>
-            <button className="read_more">Read More</button>
+            <Link to="/article">
+              <button className="read_more">Read More</button>
+            </Link>
           </div>
         </div>
       </div>
