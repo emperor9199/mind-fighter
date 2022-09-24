@@ -22,24 +22,12 @@ const Footer = () => {
           <div className="col-xs-6 col-md-3">
             <h6>Services</h6>
             <ul className="footer-links service-link-hover">
-              <li>
-                C
-              </li>
-              <li>
-                  UI Design
-              </li>
-              <li>
-                  PHP
-              </li>
-              <li>
-                  Java
-              </li>
-              <li>
-                Android
-              </li>
-              <li>
-                Templates
-              </li>
+              <li>C</li>
+              <li>UI Design</li>
+              <li>PHP</li>
+              <li>Java</li>
+              <li>Android</li>
+              <li>Templates</li>
             </ul>
           </div>
 
@@ -53,14 +41,10 @@ const Footer = () => {
                 <a href="#contact-us">Contact Us</a>
               </li>
               <li>
-                <a href="#work-process">
-                  Services
-                </a>
+                <a href="#work-process">Services</a>
               </li>
               <li>
-                <a href="http://scanfcode.com/privacy-policy/">
-                  Blogs
-                </a>
+                <a href="http://scanfcode.com/privacy-policy/">Blogs</a>
               </li>
             </ul>
           </div>
@@ -77,31 +61,46 @@ const Footer = () => {
           </div>
 
           <div className="col-md-4 col-sm-1 col-xs-12 copyright-text ">
-            Contact:<span className="ml-1">+91-9979555154</span> 
+            Contact:<span className="ml-1">+91-9979555154</span>
           </div>
 
           <div className="col-md-4 col-sm-6 col-xs-12">
-            
             <ul className="social-icons">
-            <li>
-                <a className="facebook" href="#">
+              <li>
+                <a
+                  className="facebook"
+                  href="//api.whatsapp.com/send?phone=918128347277"
+                  target="_blank"
+                >
                   <i className="fa fa-whatsapp" />
                 </a>
               </li>
               <li>
-                <a className="facebook" href="#">
+                <a
+                  className="facebook"
+                  href="https://www.facebook.com/profile.php?id=100085974814183"
+                  target="_blank"
+                >
                   <i className="fa fa-facebook" />
                 </a>
               </li>
               <li>
-                <a className="twitter" href="#">
+                <a
+                  className="twitter"
+                  href="https://twitter.com/themindfighters?t=fQWK5EoXCUS-oeNRXeTXJw&s=09"
+                  target="_blank"
+                >
                   <i className="fa fa-twitter"></i>
                 </a>
               </li>
               {/* <li><a className="dribbble" href="#"><i className="fa fa-dribbble"></i></a></li> */}
               <li>
-                <a className="linkedin" href="#">
-                  <i className="fa fa-linkedin"></i>
+                <a
+                  className="linkedin"
+                  href="https://instagram.com/themindfighters?igshid=YmMyMTA2M2Y="
+                  target="_blank"
+                >
+                  <i className="fa fa-instagram"></i>
                 </a>
               </li>
             </ul>
