@@ -10,22 +10,24 @@ import Blog from "../Blog/Blog";
 import ContactUs from "../ContactUs/ContactUs";
 import FAQ from "../FAQ/FAQ";
 import AboutThree from "../AboutThree/AboutThree";
+import Feedback from "../Feedback/Feedback";
 
-const Home = ({aboutSection, serviceSection, contcatSection}) => {
+const Home = ({ aboutSection, serviceSection, contcatSection }) => {
   return (
     <>
       {" "}
       <HeroSection />
       <CoreServices />
-      <AboutUs aboutSection={aboutSection}/>
+      <AboutUs aboutSection={aboutSection} />
       <AboutTwo />
       <AboutThree />
-      <Services serviceSection={serviceSection}/>
+      <Services serviceSection={serviceSection} />
       <TestiMonials />
       {/* <Counter /> */}
       <Blog />
+      <ContactUs contcatSection={contcatSection} />
       <FAQ />
-      <ContactUs contcatSection={contcatSection}/>
+      <Feedback />
     </>
   );
 };

@@ -1,0 +1,20 @@
+.article_upper_container {
+  height: 35rem;
+  width: 100%;
+  display: flex !important;
+}
+
+.article_upper_container .article_cover {
+  position: absolute;
+  right: 0;
+  border-radius: 1.5rem;
+  width: 50%;
+  height: 93%;
+  margin: 1rem 0;
+  object-fit: cover;
+}
+
+/* .article_img_container img {
+  height: 100%;
+  border: 3px solid blue;
+} */
