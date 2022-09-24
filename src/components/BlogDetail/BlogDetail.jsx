@@ -12,13 +12,13 @@ const BlogDetail = () => {
 
   console.log("categoryDAta", categoryData);
 
-  // useEffect(() => {
-  //   setCategoryData(
-  //     blogData.filter((item) => item.category === selectedCategory)
-  //   );
+  useEffect(() => {
+    setCategoryData(
+      blogData.filter((item) => item.category === selectedCategory)
+    );
 
-  //   console.log("inside useeffect");
-  // }, [categories]);
+    console.log("inside useeffect");
+  }, [categories]);
 
   const ax = () => {
     setCategoryData(
