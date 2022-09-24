@@ -1,7 +1,32 @@
 import React from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "./Footer.css";
 
-const Footer = () => {
+const Footer = ({ scrollDown, scrollService, scrollContact }) => {
+
+  let history = useNavigate();
+
+  const redirectToAbout = () => {
+    history("/");
+    setTimeout(() => {
+      scrollDown();
+    }, 500);
+  };
+
+  const redirectToService = () => {
+    history("/");
+    setTimeout(() => {
+      scrollService();
+    }, 500);
+  };
+
+  const redirectToContact = () => {
+    history("/");
+    setTimeout(() => {
+      scrollContact();
+    }, 500);
+  };
+
   return (
     <footer className="site-footer">
       <div className="container">
@@ -35,16 +60,16 @@ const Footer = () => {
             <h6>Quick Links</h6>
             <ul className="footer-links">
               <li>
-                <a href="#features">About</a>
+              <a onClick={redirectToAbout} className="link-cursor">About</a>
               </li>
               <li>
-                <a href="#contact-us">Contact Us</a>
+              <a onClick={redirectToContact} className="link-cursor">Contact Us</a>
               </li>
               <li>
-                <a href="#work-process">Services</a>
+              <a onClick={redirectToService} className="link-cursor">Services</a>
               </li>
               <li>
-                <a href="http://scanfcode.com/privacy-policy/">Blogs</a>
+              <Link to="/blogs">Blog</Link>
               </li>
             </ul>
           </div>
