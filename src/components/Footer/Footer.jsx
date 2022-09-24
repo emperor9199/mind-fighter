@@ -22,12 +22,12 @@ const Footer = () => {
           <div className="col-xs-6 col-md-3">
             <h6>Services</h6>
             <ul className="footer-links service-link-hover">
-              <li>C</li>
-              <li>UI Design</li>
-              <li>PHP</li>
-              <li>Java</li>
-              <li>Android</li>
-              <li>Templates</li>
+              <li>Mental health</li>
+              <li>Relationship</li>
+              <li>Corporate</li>
+              <li>Victim</li>
+              <li>Sports</li>
+              <li>Yoga</li>
             </ul>
           </div>
 
