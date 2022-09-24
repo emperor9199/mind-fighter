@@ -66,7 +66,11 @@ function App() {
           }
         />
       </Routes>
-      <Footer />
+      <Footer
+        scrollDown={scrollAbout}
+        scrollService={scrollService}
+        scrollContact={scrollContact}
+      />
     </BrowserRouter>
   );
 }
