@@ -17,6 +17,7 @@ const Navbar = ({
 
   const redirectToAbout = () => {
     setActive("home");
+    toggle();
     history("/");
     setTimeout(() => {
       scrollDown();
@@ -25,6 +26,7 @@ const Navbar = ({
 
   const redirectToService = () => {
     setActive("home");
+    toggle();
     history("/");
     setTimeout(() => {
       scrollService();
@@ -33,6 +35,7 @@ const Navbar = ({
 
   const redirectToContact = () => {
     setActive("home");
+    toggle();
     history("/");
     setTimeout(() => {
       scrollContact();
@@ -50,7 +53,12 @@ const Navbar = ({
         <div className="row">
           <div className="col-12">
             <nav className="main-nav d-flex flex-row justify-content-between align-items-center nav_con_vk">
-              <Link to="/" onClick={() => setActive("home")}>
+              <Link
+                to="/"
+                onClick={() => {
+                  setActive("home");
+                }}
+              >
                 <div className="d-flex flex-row justify-content-between align-items-center">
                   <img
                     src={logoImg}
@@ -70,6 +78,7 @@ const Navbar = ({
                       fontSize: "1.7rem",
                       textTransform: "uppercase",
                       fontFamily: "Lovelo, sans-serif",
+                      display: isOpenNav ? "none" : "inline",
                       color: "#122c3c",
                     }}
                   >
@@ -83,7 +92,10 @@ const Navbar = ({
                   <Link
                     to="/"
                     className={`${active === "home" ? "active" : ""}`}
-                    onClick={() => setActive("home")}
+                    onClick={() => {
+                      setActive("home");
+                      toggle();
+                    }}
                   >
                     Home
                   </Link>
@@ -96,7 +108,10 @@ const Navbar = ({
                   <Link
                     to="/blogs"
                     className={`${active === "blog" ? "active" : ""}`}
-                    onClick={() => setActive("blog")}
+                    onClick={() => {
+                      setActive("blog");
+                      toggle();
+                    }}
                   >
                     Blog
                   </Link>

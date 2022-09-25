@@ -3,11 +3,17 @@ import { Link, useNavigate } from "react-router-dom";
 import { service } from "../../Data/Service";
 import "./Footer.css";
 
-const Footer = ({ scrollDown, scrollService, scrollContact, active, setActive }) => {
+const Footer = ({
+  scrollDown,
+  scrollService,
+  scrollContact,
+  active,
+  setActive,
+}) => {
   let history = useNavigate();
 
   const redirectToAbout = () => {
-    setActive("home")
+    setActive("home");
     history("/");
     setTimeout(() => {
       scrollDown();
@@ -15,7 +21,7 @@ const Footer = ({ scrollDown, scrollService, scrollContact, active, setActive })
   };
 
   const redirectToService = () => {
-    setActive("home")
+    setActive("home");
     history("/");
     setTimeout(() => {
       scrollService();
@@ -23,7 +29,7 @@ const Footer = ({ scrollDown, scrollService, scrollContact, active, setActive })
   };
 
   const redirectToContact = () => {
-    setActive("home")
+    setActive("home");
     history("/");
     setTimeout(() => {
       scrollContact();
@@ -79,7 +85,9 @@ const Footer = ({ scrollDown, scrollService, scrollContact, active, setActive })
                 </a>
               </li>
               <li>
-                <Link to="/blogs" onClick={() => setActive("blog")}>Blog</Link>
+                <Link to="/blogs" onClick={() => setActive("blog")}>
+                  Blog
+                </Link>
               </li>
             </ul>
           </div>
@@ -87,20 +95,18 @@ const Footer = ({ scrollDown, scrollService, scrollContact, active, setActive })
         <hr />
       </div>
       <div className="container">
-        <div className="row">
-          <div className="col-md-4 col-sm-5 col-xs-12">
-            <p className="copyright-text">
+
+      <div class="d-flex justify-content-between">
+      <div>
+          <p className="copyright-text">
               Copyright &copy; 2022 All Rights Reserved by
               <a href="#"> The Mind Fighter&reg;</a>.
             </p>
           </div>
-
-          <div className="col-md-4 col-sm-1 col-xs-12 copyright-text ">
-            Contact:<span className="ml-1">+91-9979555154</span>
-          </div>
-
-          <div className="col-md-4 col-sm-6 col-xs-12">
-            <ul className="social-icons">
+          <div>Contact:<span className="ml-1">+91-9979555154 </span></div>
+          <div>Email:<span className="ml-1">themindfighters@gmail.com</span></div>
+          <div>
+          <ul className="social-icons">
               <li>
                 <a
                   className="facebook"
@@ -140,7 +146,9 @@ const Footer = ({ scrollDown, scrollService, scrollContact, active, setActive })
               </li>
             </ul>
           </div>
-        </div>
+      </div>
+
+        
       </div>
     </footer>
   );

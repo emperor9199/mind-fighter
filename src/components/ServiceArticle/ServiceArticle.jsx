@@ -9,9 +9,9 @@ const ServiceArticle = () => {
   const serviceContent = service.filter((word) => word.id == params.id);
   const { Name, Para1, Para2, ParaImg } = serviceContent[0];
 
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // });
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
 
   return (
     <>

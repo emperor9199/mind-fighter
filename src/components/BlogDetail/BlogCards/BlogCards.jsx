@@ -1,13 +1,12 @@
 import React, { useEffect } from "react";
 import "./BlogCards.css";
-import testImg from "../../../images/blog1.jpg";
 import { Link } from "react-router-dom";
 
-const BlogCards = ({ title, description, category, id }) => {
+const BlogCards = ({ title, description, category, id, img }) => {
   return (
     <div className="blog_card_container">
       <div className="blog_card_img_container">
-        <img src={testImg} alt="" />
+        <img src={img} alt="" className="pill-blog-img"/>
       </div>
       <div className="blog_card_inner_container">
         <h3>{title} </h3>
