@@ -716,7 +716,7 @@ welcome
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(./images/yoga2.jpg);
+  background-image: url(./images/landing_page.jpeg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -767,7 +767,7 @@ welcome
   .welcome-area .header-text p {
     text-align: center;
     color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 42px;
   }
 }
 
@@ -811,7 +811,7 @@ welcome
     text-align: center;
     color: #fff;
     font-size: 14px;
-    line-height: 22px;
+    line-height: 42px;
     margin-bottom: 40px;
   }
 }
@@ -928,7 +928,7 @@ parallax & home seperator
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-image: url(./images/yoga1.jpg);
+  background-image: url(./images/service_bg.jpeg);
   z-index: 2;
   top: -20%;
   left: -20%;
