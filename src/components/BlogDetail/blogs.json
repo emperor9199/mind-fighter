@@ -2,31 +2,31 @@
   {
     "title": "xyz1",
     "description": "lorem ipsum dolor sit amet, lorem ipsum dolor sit amet,lorem ipsum dolor sit amet, lorem ipsum dolor sit amet",
-    "category": "one"
+    "category": "Mental health"
   },
   {
     "title": "xyz13",
     "description": "lorem ipsum dolor sit amet, lorem ipsum dolor sit amet,lorem ipsum dolor sit amet, lorem ipsum dolor sit amet",
-    "category": "one"
+    "category": "Mental health"
   },
   {
     "title": "xyz2",
     "description": "lorem ipsum dolor sit amet, lorem ipsum dolor sit amet,lorem ipsum dolor sit amet, lorem ipsum dolor sit amet",
-    "category": "two"
+    "category": "Therapy"
   },
   {
     "title": "xyz3",
     "description": "lorem ipsum dolor sit amet, lorem ipsum dolor sit amet,lorem ipsum dolor sit amet, lorem ipsum dolor sit amet",
-    "category": "one"
+    "category": "Mental health"
   },
   {
     "title": "xyz4",
     "description": "lorem ipsum dolor sit amet, lorem ipsum dolor sit amet,lorem ipsum dolor sit amet, lorem ipsum dolor sit amet",
-    "category": "two"
+    "category": "Therapy"
   },
   {
     "title": "xyz5",
     "description": "lorem ipsum dolor sit amet, lorem ipsum dolor sit amet,lorem ipsum dolor sit amet, lorem ipsum dolor sit amet",
-    "category": "three"
+    "category": "Physical health"
   }
 ]

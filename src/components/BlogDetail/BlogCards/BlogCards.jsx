@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./BlogCards.css";
 import testImg from "../../../images/blog1.jpg";
 
 const BlogCards = ({ title, description, category }) => {
   console.log("title", title);
+
   return (
     <div className="blog_card_container">
       <div className="blog_card_img_container">
