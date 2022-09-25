@@ -56,6 +56,7 @@ const BlogDetail = () => {
               description={item.imgPara}
               category={item.category}
               id={item.id}
+              img={item.img}
             />
           );
         })}

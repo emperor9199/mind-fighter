@@ -11,6 +11,7 @@ const Navbar = ({ scrollDown, scrollService, scrollContact, active, setActive })
 
   const redirectToAbout = () => {
     setActive("home")
+    toggle();
     history("/");
     setTimeout(() => {
       scrollDown();
@@ -18,7 +19,8 @@ const Navbar = ({ scrollDown, scrollService, scrollContact, active, setActive })
   };
 
   const redirectToService = () => {
-    setActive("home")
+    setActive("home");
+    toggle();
     history("/");
     setTimeout(() => {
       scrollService();
@@ -26,7 +28,8 @@ const Navbar = ({ scrollDown, scrollService, scrollContact, active, setActive })
   };
 
   const redirectToContact = () => {
-    setActive("home")
+    setActive("home");
+    toggle();
     history("/");
     setTimeout(() => {
       scrollContact();
@@ -44,7 +47,7 @@ const Navbar = ({ scrollDown, scrollService, scrollContact, active, setActive })
         <div className="row">
           <div className="col-12">
             <nav className="main-nav d-flex flex-row justify-content-between align-items-center nav_con_vk">
-              <Link to="/" onClick={() => setActive("home")}>
+              <Link to="/" onClick={() => {setActive("home");}}>
                 <div className="d-flex flex-row justify-content-between align-items-center">
                   <img
                     src={logoImg}
@@ -64,6 +67,7 @@ const Navbar = ({ scrollDown, scrollService, scrollContact, active, setActive })
                       fontSize: "2rem",
                       textTransform: "uppercase",
                       fontFamily: "Lovelo, sans-serif",
+                      display: isOpenNav ? "none" : "inline",
                     }}
                   >
                     The Mind Fighter
@@ -73,7 +77,7 @@ const Navbar = ({ scrollDown, scrollService, scrollContact, active, setActive })
 
               <ul className="nav">
                 <li>
-                  <Link to="/" className={`${active === 'home' ? "active" : ""}`} onClick={() => setActive("home")}>
+                  <Link to="/" className={`${active === 'home' ? "active" : ""}`} onClick={() => {setActive("home");toggle();}}>
                     Home
                   </Link>
                 </li>
@@ -82,7 +86,7 @@ const Navbar = ({ scrollDown, scrollService, scrollContact, active, setActive })
                 </li>
 
                 <li>
-                  <Link to="/blogs" className={`${active === 'blog' ? "active" : ""}`} onClick={() => setActive("blog")}>Blog</Link>
+                  <Link to="/blogs" className={`${active === 'blog' ? "active" : ""}`} onClick={() => {setActive("blog");toggle();}}>Blog</Link>
                 </li>
                 <li>
                   <a onClick={redirectToService}>Services</a>

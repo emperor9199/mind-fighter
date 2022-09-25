@@ -15180,8 +15180,7 @@ ul.ascii
     flex-direction: column;
   }
   .nav_title_vk {
-    font-size: 1.3rem !important;
-    display: none;
+    font-size: 1rem !important;
   }
 }
 
