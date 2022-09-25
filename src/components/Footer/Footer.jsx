@@ -95,22 +95,25 @@ const Footer = ({
         <hr />
       </div>
       <div className="container">
-
-      <div class="d-flex justify-content-between">
-      <div>
-          <p className="copyright-text">
+        <div class="d-flex justify-content-between">
+          <div>
+            <p className="copyright-text">
               Copyright &copy; 2022 All Rights Reserved by
               <a href="#"> The Mind Fighter&reg;</a>.
             </p>
           </div>
-          <div>Contact:<span className="ml-1">+91-9979555154 </span></div>
-          <div>Email:<span className="ml-1">themindfighters@gmail.com</span></div>
           <div>
-          <ul className="social-icons">
+            Contact:<span className="ml-1">+91-9979555154 </span>
+          </div>
+          <div>
+            Email:<span className="ml-1">themindfighters@gmail.com</span>
+          </div>
+          <div>
+            <ul className="social-icons">
               <li>
                 <a
                   className="facebook"
-                  href="//api.whatsapp.com/send?phone=918128347277"
+                  href="//api.whatsapp.com/send?phone=919979555154"
                   target="_blank"
                 >
                   <i className="fa fa-whatsapp" />
@@ -146,9 +149,7 @@ const Footer = ({
               </li>
             </ul>
           </div>
-      </div>
-
-        
+        </div>
       </div>
     </footer>
   );
