@@ -19,10 +19,11 @@ const BlogPage = () => {
         <div className="blog_container">
           <img src={imgTest1} />
           <div className="blog_content">
-            <button className="category_pill">Category</button>
+            <button className="category_pill">Mental Health</button>
             <h3>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est
-              magnam, praesentium alias voluptates provident ut doloremque
+              It is very important to know a little bit about suicide and
+              suicidal thoughts before we directly jump onto the ways of
+              preventing suicidal thoughts.
             </h3>
             <p>
               deleniti optio ex voluptates, laborum fugiat aliquam explicabo

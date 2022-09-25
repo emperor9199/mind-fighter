@@ -1,23 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Feedback.css";
 
 const Feedback = () => {
-  const sendMail = () => {
-    console.log("inside mail fn...");
+  const [fullName, setFullName] = useState();
+  const [email, setEmail] = useState();
+  const [message, setMessage] = useState();
 
-    fetch("formURL", {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        ex_user: "formEmail(use state)",
-        ex_data: "data to be passed",
-      }),
-    }).then((res) => {
-      console.log("mail response:", res);
-    });
+  const sendMail = () => {
+    fetch(
+      "https://public.herotofu.com/v1/eb7458a0-3cf8-11ed-a10f-d1a38bd15d37",
+      {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          Title: "Got a Feeback from Client",
+          Name: fullName,
+          message: message,
+          email: email,
+          //   data: `
+          //   Got a Feedback From Client,\n  ${fullName} says, ${message} \n\n Email:${email}
+          // `,
+        }),
+      }
+    ).then(() => {});
   };
 
   return (
@@ -45,6 +53,7 @@ const Feedback = () => {
                         id="name"
                         placeholder="Full Name"
                         required=""
+                        onChange={(e) => setFullName(e.target.value)}
                       />
                     </fieldset>
                   </div>
@@ -58,6 +67,7 @@ const Feedback = () => {
                         id="email"
                         placeholder="E-Mail Address"
                         required=""
+                        onChange={(e) => setEmail(e.target.value)}
                       />
                     </fieldset>
                   </div>
@@ -71,6 +81,7 @@ const Feedback = () => {
                         id="message"
                         placeholder="Your Message"
                         required=""
+                        onChange={(e) => setMessage(e.target.value)}
                       ></textarea>
                     </fieldset>
                   </div>

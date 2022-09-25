@@ -1,7 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ContactUs.css";
 
 const ContactUs = ({ contcatSection }) => {
+  const [firstName, setFirstName] = useState();
+  const [lastName, setLastName] = useState();
+  const [email, setEmail] = useState();
+  const [mobile, setMobile] = useState();
+  const [date, setDate] = useState();
+  const [time, setTime] = useState();
+  const [message, setMessage] = useState();
+
+  const sendMail = () => {
+    fetch(
+      "https://public.herotofu.com/v1/eb7458a0-3cf8-11ed-a10f-d1a38bd15d37",
+      {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          Title: "You have an appointment",
+          Name: firstName + " " + lastName,
+          Email: email,
+          Mobile: mobile,
+          Date: date,
+          Time: time,
+          Message: message,
+        }),
+      }
+    ).then(() => {});
+  };
+
   return (
     <section className="section colored" ref={contcatSection}>
       <div className="container">
@@ -47,6 +77,7 @@ const ContactUs = ({ contcatSection }) => {
                         id="name"
                         placeholder="First Name"
                         required=""
+                        onChange={(e) => setFirstName(e.target.value)}
                       />
                     </fieldset>
                   </div>
@@ -59,6 +90,7 @@ const ContactUs = ({ contcatSection }) => {
                         id="name"
                         placeholder="Last Name"
                         required=""
+                        onChange={(e) => setLastName(e.target.value)}
                       />
                     </fieldset>
                   </div>
@@ -72,6 +104,7 @@ const ContactUs = ({ contcatSection }) => {
                         id="email"
                         placeholder="E-Mail Address"
                         required=""
+                        onChange={(e) => setEmail(e.target.value)}
                       />
                     </fieldset>
                   </div>
@@ -85,6 +118,7 @@ const ContactUs = ({ contcatSection }) => {
                         id="Phone"
                         placeholder="Contact Number"
                         required=""
+                        onChange={(e) => setMobile(e.target.value)}
                       />
                     </fieldset>
                   </div>
@@ -98,6 +132,7 @@ const ContactUs = ({ contcatSection }) => {
                         id="Date"
                         placeholder="Select Date"
                         required=""
+                        onChange={(e) => setDate(e.target.value)}
                       />
                     </fieldset>
                   </div>
@@ -110,6 +145,7 @@ const ContactUs = ({ contcatSection }) => {
                         id="Time"
                         placeholder="Select Time"
                         required=""
+                        onChange={(e) => setTime(e.target.value)}
                       />
                     </fieldset>
                   </div>
@@ -122,6 +158,7 @@ const ContactUs = ({ contcatSection }) => {
                         id="message"
                         placeholder="Your Message"
                         required=""
+                        onChange={(e) => setMessage(e.target.value)}
                       ></textarea>
                     </fieldset>
                   </div>
@@ -131,6 +168,7 @@ const ContactUs = ({ contcatSection }) => {
                         type="submit"
                         id="form-submit"
                         className="main-button"
+                        onClick={sendMail}
                       >
                         Book Now
                       </button>
