@@ -15,6 +15,9 @@ function App() {
   const serviceSection = useRef(null);
   const contcatSection = useRef(null);
 
+  const location = window.location.pathname;
+  const [active, setActive] = useState(location === "/blogs" ? "blog" : "home");
+
   const scrollAbout = () => {
     window.scrollTo({
       top: aboutSection.current.offsetTop,
@@ -42,6 +45,8 @@ function App() {
         scrollDown={scrollAbout}
         scrollService={scrollService}
         scrollContact={scrollContact}
+        active={active}
+        setActive={setActive}
       />
       <Routes>
         <Route
@@ -73,6 +78,8 @@ function App() {
         scrollDown={scrollAbout}
         scrollService={scrollService}
         scrollContact={scrollContact}
+        active={active}
+        setActive={setActive}
       />
     </BrowserRouter>
   );

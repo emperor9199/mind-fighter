@@ -57,10 +57,25 @@
   border: 3px solid blue;
 } */
 
+
+.para-img{
+  border-radius: 1.5rem;
+  width: 50%;
+  height: 25rem;
+  margin: 0.5rem 0 2rem 0;
+  object-fit: cover;
+}
+
 .para-t-li{
   padding-left:0
 }
 
 .para-t-li li{
   margin: 1rem 0 ;
+}
+
+@media (max-width:1024px) {
+  .para-img{
+    width: 100%;
+  }  
 }

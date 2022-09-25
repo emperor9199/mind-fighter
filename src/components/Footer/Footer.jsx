@@ -3,10 +3,11 @@ import { Link, useNavigate } from "react-router-dom";
 import { service } from "../../Data/Service";
 import "./Footer.css";
 
-const Footer = ({ scrollDown, scrollService, scrollContact }) => {
+const Footer = ({ scrollDown, scrollService, scrollContact, active, setActive }) => {
   let history = useNavigate();
 
   const redirectToAbout = () => {
+    setActive("home")
     history("/");
     setTimeout(() => {
       scrollDown();
@@ -14,6 +15,7 @@ const Footer = ({ scrollDown, scrollService, scrollContact }) => {
   };
 
   const redirectToService = () => {
+    setActive("home")
     history("/");
     setTimeout(() => {
       scrollService();
@@ -21,6 +23,7 @@ const Footer = ({ scrollDown, scrollService, scrollContact }) => {
   };
 
   const redirectToContact = () => {
+    setActive("home")
     history("/");
     setTimeout(() => {
       scrollContact();
@@ -76,7 +79,7 @@ const Footer = ({ scrollDown, scrollService, scrollContact }) => {
                 </a>
               </li>
               <li>
-                <Link to="/blogs">Blog</Link>
+                <Link to="/blogs" onClick={() => setActive("blog")}>Blog</Link>
               </li>
             </ul>
           </div>
@@ -88,7 +91,7 @@ const Footer = ({ scrollDown, scrollService, scrollContact }) => {
           <div className="col-md-4 col-sm-5 col-xs-12">
             <p className="copyright-text">
               Copyright &copy; 2022 All Rights Reserved by
-              <a href="#"> The Mind Fighter</a>.
+              <a href="#"> The Mind Fighter&reg;</a>.
             </p>
           </div>
 
