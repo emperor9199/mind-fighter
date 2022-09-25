@@ -1,22 +1,19 @@
 import React from "react";
+import maleCover from "../../images/maleCover.jpg";
+import femaleCover from "../../images/femaleCover.jpg";
 
 const TestiMonialsDetails = ({ testiMonialDetail }) => {
-  const { name, address, description, img } = testiMonialDetail;
+  const { name, address, description, img, gender } = testiMonialDetail;
   console.log("testiMonialDetail" + testiMonialDetail);
   return (
     <figure className="item snip1515">
       <div className="profile-image">
-        <img
-          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample47.jpg"
-          alt="sample47"
-        />
+        <img src={gender === "male" ? maleCover : femaleCover} alt="coverImg" />
       </div>
       <figcaption className="shadow-effect shadow-effect-card">
         <h3>{name}</h3>
-        <h4>{address}</h4>
-        <p>
-        {description}
-        </p>
+        {/* <h4>{address}</h4> */}
+        <p>{description}</p>
       </figcaption>
     </figure>
 

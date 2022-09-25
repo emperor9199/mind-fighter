@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import BlogCards from "./BlogCards/BlogCards";
-import {blogData} from "./blogs.js";
+import { blogData } from "./blogs.js";
 import "./BlogDetail.css";
 
 const BlogDetail = () => {
