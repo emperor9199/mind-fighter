@@ -2,10 +2,15 @@
   margin: 2rem 1rem;
 }
 
+.blog_detail_container h2 {
+  padding-left: 8rem;
+}
+
 .center-pill {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 2rem;
 }
 
 .mobile_cata_pills {
