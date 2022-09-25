@@ -51,7 +51,7 @@ const Article = () => {
         </div>
       </div>
       <div class="pt-6 pb-4 text-justify">
-        <div class="row justify-content-center w-100 sub_article_main_container ">
+        <div class="row justify-content-center w-100 sub_article_main_container">
           <div class="col-md-12 col-lg-10">
             <article class="article-post">
               <p dangerouslySetInnerHTML={{ __html: description }} />
