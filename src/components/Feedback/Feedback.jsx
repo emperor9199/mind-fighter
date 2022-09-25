@@ -2,6 +2,24 @@ import React from "react";
 import "./Feedback.css";
 
 const Feedback = () => {
+  const sendMail = () => {
+    console.log("inside mail fn...");
+
+    fetch("formURL", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        ex_user: "formEmail(use state)",
+        ex_data: "data to be passed",
+      }),
+    }).then((res) => {
+      console.log("mail response:", res);
+    });
+  };
+
   return (
     <section className="section colored">
       <div className="container">
@@ -11,32 +29,12 @@ const Feedback = () => {
               <h2 className="section-title">Feedback</h2>
             </div>
           </div>
-          {/* <div className="offset-lg-3 col-lg-6">
-        <div className="center-text">
-          <p>The Mind Fighter – Attract Your Thoughts into Action</p>
-        </div>
-      </div> */}
         </div>
 
         <div className="row">
-          {/* <div className="col-lg-4 col-md-6 col-sm-12">
-        <h5 className="margin-bottom-30">Keep in touch</h5>
-        <div className="contact-text">
-          <p>
-            111-222 abcd, xyz
-            <br />
-            abc def ghf
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Accusantium, tempore dolore.
-          </p>
-        </div>
-      </div> */}
-
           <div className="col-lg-8 col-md-6 col-sm-12 container">
             <div className="contact-form">
-              <form id="contact" action="" method="get">
+              <form id="contact">
                 <div className="row">
                   <div className="col-lg-6 col-md-12 col-sm-12">
                     <fieldset>
@@ -82,6 +80,7 @@ const Feedback = () => {
                         type="submit"
                         id="form-submit"
                         className="main-button"
+                        onClick={sendMail}
                       >
                         Send Message
                       </button>
