@@ -15191,3 +15191,10 @@ ul.ascii
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+.blog-text-truncate-main{
+  -webkit-line-clamp: 5;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
