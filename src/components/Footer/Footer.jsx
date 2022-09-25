@@ -67,7 +67,7 @@ const Footer = ({ scrollDown, scrollService, scrollContact }) => {
               </li>
               <li>
                 <a onClick={redirectToContact} className="link-cursor">
-                  Contact Us
+                  Book a slot
                 </a>
               </li>
               <li>

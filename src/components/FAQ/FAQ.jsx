@@ -28,15 +28,15 @@ const FAQ = () => {
                     The Mind Fighter is an online counselling service whose main
                     goal is to help people who are unable to fight their
                     different battles in life. Its purpose is just like its name
-                    i.e., to fight thier Negative Thoughts
+                    i.e., to fight thier negative thoughts
                   </p>
                 </div>
               </details>
 
               <details>
                 <summary>
-                  The online counselling service of The Mind Fighter is it secure
-                  and confidential?
+                  The online counselling service of The Mind Fighter is it
+                  secure and confidential?
                 </summary>
                 <div className="faq__content">
                   <p>
