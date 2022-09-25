@@ -1,12 +1,17 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 import "./Feedback.css";
 
 const Feedback = () => {
   const [fullName, setFullName] = useState();
   const [email, setEmail] = useState();
   const [message, setMessage] = useState();
+  const navigate = useNavigate();
 
-  const sendMail = () => {
+  const sendMail = (e) => {
+    e.preventDefault();
+
     fetch(
       "https://public.herotofu.com/v1/eb7458a0-3cf8-11ed-a10f-d1a38bd15d37",
       {
@@ -26,10 +31,21 @@ const Feedback = () => {
         }),
       }
     )
-      .then(() => alert("Your slot is booked!"))
-      .catch((e) =>
-        alert("Your feedback is not sent unfortunately, please try again!!!", e)
-      );
+      .then(() => {
+        alert("Your slot is booked!");
+        navigate("/");
+      })
+      .catch((e) => {
+        alert(
+          "Your feedback is not sent unfortunately, please try again!!!",
+          e
+        );
+        navigate("/");
+      });
+
+    setFullName("");
+    setEmail("");
+    setMessage("");
   };
 
   return (
@@ -46,7 +62,12 @@ const Feedback = () => {
         <div className="row">
           <div className="col-lg-8 col-md-6 col-sm-12 container">
             <div className="contact-form">
-              <form id="contact-feedback" onSubmit={sendMail} method="get">
+              <form
+                id="contact-feedback"
+                // action="https://public.herotofu.com/v1/c048fd40-3ca6-11ed-a10f-d1a38bd15d37"
+                // method="post"
+                onSubmit={sendMail}
+              >
                 <div className="row">
                   <div className="col-lg-6 col-md-12 col-sm-12">
                     <fieldset>
@@ -59,6 +80,7 @@ const Feedback = () => {
                         id="name"
                         // placeholder="Full Name"
                         required=""
+                        value={fullName}
                         onChange={(e) => setFullName(e.target.value)}
                       />
                     </fieldset>
@@ -73,6 +95,7 @@ const Feedback = () => {
                         type="email"
                         className="form-control"
                         id="email"
+                        value={email}
                         // placeholder="E-Mail Address"
                         required=""
                         onChange={(e) => setEmail(e.target.value)}
@@ -89,6 +112,7 @@ const Feedback = () => {
                         rows="6"
                         className="form-control"
                         id="message"
+                        value={message}
                         // placeholder="Your Message"
                         required=""
                         onChange={(e) => setMessage(e.target.value)}
