@@ -29,7 +29,7 @@ const ServiceArticle = () => {
 
           <div>
             <div class="row">
-              <div class="">
+              <div class="text-justify">
                 <td dangerouslySetInnerHTML={{ __html: Para2 }} />
               </div>
             </div>
