@@ -191,8 +191,8 @@ body {
 
 .section {
   position: relative;
-  padding-top: 100px;
-  padding-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .section.colored {
@@ -15175,13 +15175,11 @@ ul.ascii
   margin-top: 8.3rem;
 }
 
-
 @media (max-width: 1024px) {
-
-  .nav_con_vk{
+  .nav_con_vk {
     flex-direction: column;
   }
-  .nav_title_vk{
+  .nav_title_vk {
     font-size: 1.3rem !important;
     display: none;
   }

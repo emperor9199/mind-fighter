@@ -22,6 +22,9 @@ const BlogDetail = () => {
 
   return (
     <div className="blog_detail_container">
+      <h2>All Blogs</h2>
+      <hr className="section_devision" />
+
       <div className="blog_detail_pills center-pill mb-3">
         {categories?.map((category) => {
           return (

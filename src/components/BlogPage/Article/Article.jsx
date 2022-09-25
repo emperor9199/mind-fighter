@@ -18,11 +18,6 @@ const Article = () => {
           <div class="h-100 tofront">
             <div class="row justify-content-between article_upper_container">
               <div class="col-md-6 pb-6 align-self-center">
-                <p class="text-uppercase font-weight-bold">
-                  <a class="text-danger" href="./category.html">
-                    Stories
-                  </a>
-                </p>
                 <h1 class="display-4 secondfont mb-3 font-weight-bold">
                   Rising need for Counselling
                 </h1>
