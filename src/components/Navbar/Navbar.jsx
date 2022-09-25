@@ -40,7 +40,7 @@ const Navbar = ({ scrollDown, scrollService, scrollContact }) => {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <nav className="main-nav d-flex flex-row justify-content-between align-items-center">
+            <nav className="main-nav d-flex flex-row justify-content-between align-items-center nav_con_vk">
               <Link to="/">
                 <div className="d-flex flex-row justify-content-between align-items-center">
                   <img
@@ -52,9 +52,10 @@ const Navbar = ({ scrollDown, scrollService, scrollContact }) => {
                       marginRight: ".7rem",
                       display: isOpenNav ? "none" : "inline",
                     }}
+                    className="nav_logo_vk"
                   />
                   <p
-                    className="mb-0 text-dark h5 mx-2 pt-2"
+                    className="mb-0 text-dark h5 mx-2 pt-2 nav_title_vk"
                     style={{
                       fontWeight: "900",
                       fontSize: "2rem",

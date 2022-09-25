@@ -7,6 +7,8 @@ import Home from "./components/Home/Home";
 import BlogPage from "./components/BlogPage/BlogPage";
 import Article from "./components/BlogPage/Article/Article";
 import ServicePage from "./components/ServicePage/ServicePage";
+import ServiceArticle from "./components/ServiceArticle/ServiceArticle";
+
 
 function App() {
   const aboutSection = useRef(null);
@@ -55,6 +57,7 @@ function App() {
         <Route path="/blogs" element={<BlogPage />} />
         <Route path="/article" element={<Article />} />
         <Route path="/service" element={<ServicePage />} />
+        <Route path="/service/:id" element={<ServiceArticle />} />
         <Route
           path="*"
           element={

@@ -14,7 +14,7 @@ const BlogPage = () => {
   return (
     <>
       <div className="blog_page_container">
-        <h2>Featured Blogs</h2>
+        <h2>Featured Blog</h2>
         <hr className="section_devision" />
         <div className="blog_container">
           <img src={imgTest1} />

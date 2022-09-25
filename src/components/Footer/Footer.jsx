@@ -1,9 +1,9 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { service } from "../../Data/Service";
 import "./Footer.css";
 
 const Footer = ({ scrollDown, scrollService, scrollContact }) => {
-
   let history = useNavigate();
 
   const redirectToAbout = () => {
@@ -47,12 +47,13 @@ const Footer = ({ scrollDown, scrollService, scrollContact }) => {
           <div className="col-xs-6 col-md-3">
             <h6>Services</h6>
             <ul className="footer-links service-link-hover">
-              <li>Mental health</li>
-              <li>Relationship</li>
-              <li>Corporate</li>
-              <li>Victim</li>
-              <li>Sports</li>
-              <li>Yoga</li>
+              {service?.map((ser) => {
+                return (
+                  <Link to={`/service/${ser.id}`} key={ser.id}>
+                    <li>{ser.Name}</li>
+                  </Link>
+                );
+              })}
             </ul>
           </div>
 
@@ -60,16 +61,22 @@ const Footer = ({ scrollDown, scrollService, scrollContact }) => {
             <h6>Quick Links</h6>
             <ul className="footer-links">
               <li>
-              <a onClick={redirectToAbout} className="link-cursor">About</a>
+                <a onClick={redirectToAbout} className="link-cursor">
+                  About
+                </a>
               </li>
               <li>
-              <a onClick={redirectToContact} className="link-cursor">Contact Us</a>
+                <a onClick={redirectToContact} className="link-cursor">
+                  Contact Us
+                </a>
               </li>
               <li>
-              <a onClick={redirectToService} className="link-cursor">Services</a>
+                <a onClick={redirectToService} className="link-cursor">
+                  Services
+                </a>
               </li>
               <li>
-              <Link to="/blogs">Blog</Link>
+                <Link to="/blogs">Blog</Link>
               </li>
             </ul>
           </div>

@@ -6,8 +6,10 @@ import sportsImg from "../../images/sports1.png";
 import victimImg from "../../images/victim1.png";
 import mentalHealthImg from "../../images/mental2.png";
 import yogaImg from "../../images/yoga1.png";
+import { service } from "../../Data/Service";
+import { Link } from "react-router-dom";
 
-const Services = ({serviceSection}) => {
+const Services = ({ serviceSection }) => {
   return (
     <section className="mini" ref={serviceSection}>
       <div className="mini-content">
@@ -26,61 +28,25 @@ const Services = ({serviceSection}) => {
           </div>
 
           <div className="row">
-            <div className="col-lg-2 col-md-3 col-sm-6 col-6">
-              <a href="#" className="mini-box">
-                <i>
-                  <img src={mentalHealthImg} alt="" />
-                </i>
-                <strong>Mental health</strong>
-                <span>Mental health counselling</span>
-              </a>
-            </div>
-            <div className="col-lg-2 col-md-3 col-sm-6 col-6">
-              <a href="#" className="mini-box">
-                <i>
-                  <img src={relationshipImg} alt="" />
-                </i>
-                <strong>Relationship</strong>
-                <span>Relationship counselling</span>
-              </a>
-            </div>
-            <div className="col-lg-2 col-md-3 col-sm-6 col-6">
-              <a href="#" className="mini-box">
-                <i>
-                  <img src={corporateImg} alt="" />
-                </i>
-                <strong>Corporate</strong>
-                <span>Corporate counselling</span>
-              </a>
-            </div>
-            <div className="col-lg-2 col-md-3 col-sm-6 col-6">
-              <a href="#" className="mini-box">
-                <i>
-                  <img src={victimImg} alt="" />
-                </i>
-                <strong>Victim</strong>
-                <span>Victim counselling</span>
-              </a>
-            </div>
-            <div className="col-lg-2 col-md-3 col-sm-6 col-6">
-              <a href="#" className="mini-box">
-                <i>
-                  <img src={sportsImg} alt="" />
-                </i>
-                <strong>Sports</strong>
-                <span>Sports counselling</span>
-              </a>
-            </div>
-
-            <div className="col-lg-2 col-md-3 col-sm-6 col-6">
-              <a href="#" className="mini-box">
-                <i>
-                  <img src={yogaImg} alt="" />
-                </i>
-                <strong>Yoga</strong>
-                <span>Yoga, Meditation counselling</span>
-              </a>
-            </div>
+            {service?.map((ser) => {
+              return (
+                <Link
+                  to={`/service/${ser.id}`}
+                  key={ser.id}
+                  className="col-lg-2 col-md-3 col-sm-6 col-6"
+                >
+                  <div key={ser.id}>
+                    <a href="#" className="mini-box">
+                      <i>
+                        <img src={ser.Img} alt="" />
+                      </i>
+                      <strong>{ser.Name}</strong>
+                      <span>{ser.Description}</span>
+                    </a>
+                  </div>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </div>

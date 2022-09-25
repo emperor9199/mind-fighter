@@ -680,7 +680,7 @@ header
     /* background-color: yellow; */
   }
   .header-area .main-nav .nav li {
-    width: 100%;
+    width: 118%;
     background: #fff;
     /* border-bottom: 1px solid #eee; */
     padding-left: 0px !important;
@@ -15173,4 +15173,16 @@ ul.ascii
 
 .x-container {
   margin-top: 8.3rem;
+}
+
+
+@media (max-width: 1024px) {
+
+  .nav_con_vk{
+    flex-direction: column;
+  }
+  .nav_title_vk{
+    font-size: 1.3rem !important;
+    display: none;
+  }
 }

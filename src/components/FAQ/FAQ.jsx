@@ -28,7 +28,7 @@ const FAQ = () => {
                     The Mind Fighter is an online counselling service whose main
                     goal is to help people who are unable to fight their
                     different battles in life. Its purpose is just like its name
-                    i.e., to fight the
+                    i.e., to fight thier Negative Thoughts
                   </p>
                 </div>
               </details>
