@@ -74,12 +74,13 @@ const Navbar = ({
                   <p
                     className="mb-0 text-dark h5 mx-2 pt-2 nav_title_vk"
                     style={{
-                      fontWeight: "900",
+                      fontWeight: "500",
                       fontSize: "1.7rem",
                       textTransform: "uppercase",
-                      fontFamily: "Lovelo, sans-serif",
+                      fontFamily: "Russo One, sans-serif",
                       display: isOpenNav ? "none" : "inline",
                       color: "#122c3c",
+                      margin: 0,
                     }}
                   >
                     The Mind Fighter
