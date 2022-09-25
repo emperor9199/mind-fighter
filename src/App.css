@@ -767,7 +767,7 @@ welcome
   .welcome-area .header-text p {
     text-align: center;
     color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 42px;
   }
 }
 
@@ -811,7 +811,7 @@ welcome
     text-align: center;
     color: #fff;
     font-size: 14px;
-    line-height: 22px;
+    line-height: 42px;
     margin-bottom: 40px;
   }
 }
