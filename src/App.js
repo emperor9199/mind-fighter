@@ -60,7 +60,7 @@ function App() {
           }
         />
         <Route path="/blogs" element={<BlogPage />} />
-        <Route path="/article" element={<Article />} />
+        <Route path="/article/:id" element={<Article />} />
         <Route path="/service" element={<ServicePage />} />
         <Route path="/service/:id" element={<ServiceArticle />} />
         <Route

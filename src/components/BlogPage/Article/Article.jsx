@@ -1,12 +1,18 @@
 import React, { useEffect } from "react";
+import { blogData } from "../../BlogDetail/blogs";
 import "./Article.css";
 import imgTest from "../../../images/blog1.jpg";
 import jankiImg from "../../../images/pic.jpg";
 import imgTest1 from "../../../images/blog1.jpg";
 import imgTest2 from "../../../images/blog2.jpg";
 import imgTest3 from "../../../images/blog1.jpg";
+import { useParams } from "react-router-dom";
 
 const Article = () => {
+  const params = useParams();
+  const serviceContent = blogData?.filter((word) => word.id == params.id);
+  const { title, description, category, img, imgPara } = serviceContent[0];
+
   useEffect(() => {
     window.scrollTo(0, 0);
   });
@@ -19,25 +25,9 @@ const Article = () => {
             <div class="row justify-content-between article_upper_container">
               <div class="col-md-6 pb-6 align-self-center">
                 <h1 class="display-4 secondfont mb-3 font-weight-bold">
-                  Rising need for Counselling
+                  {title}
                 </h1>
-                <p class="mb-3 text-justify">
-                  It is very important to understand the meaning of counselling
-                  as people are not aware of it. Meaning of counselling:
-                  Counselling is to assist someone to solve their personal or
-                  professional or any other problem on their own. counselling is
-                  something that can be for a person having day-to-day life
-                  problems as well as someone who has some mental health issue.
-                  In today’s fast world people are running here and there to
-                  earn money, to settle their lives, to be number one in the
-                  competition which is important and there is no doubt about
-                  that but somewhere they forget about themselves because, in
-                  the end, we are humans! So, we need to think about things that
-                  give us happiness and worries, tension, and stress in our
-                  life. Usually, people neglect and don’t think much about
-                  things that indirectly or directly affect their personal and
-                  professional life at times.
-                </p>
+                <p class="mb-3 text-justify">{imgPara}</p>
                 <div class="d-flex align-items-center">
                   <img
                     class="rounded-circle"
@@ -54,7 +44,7 @@ const Article = () => {
                 </div>
               </div>
               {/* <div class="col-md-6 pr-0 article_img_container"> */}
-              <img src={imgTest} className="article_cover" />
+              <img src={img} className="article_cover" />
               {/* </div> */}
             </div>
           </div>
@@ -64,36 +54,7 @@ const Article = () => {
         <div class="row justify-content-center w-100 sub_article_main_container ">
           <div class="col-md-12 col-lg-10">
             <article class="article-post">
-              <p>
-                Through counselling, a person can understand the problem
-                affecting their life and they can come up with some solution.
-                The main thing about which people need to get aware is about
-                being aware of their negative emotions instead of neglecting
-                them they should try to apply ways to cope with them.
-              </p>
-              <p>
-                One can cope with personal life problems such as family
-                counselling, couple counselling, relationship counselling, and
-                individual counselling. There are other areas like employee
-                counselling, sports counselling, student counselling, and many
-                more. There are employees in the companies who are stressed due
-                to their work and somehow it affects his/ her life relations
-                which results in a poor relationship with family and leads to
-                low productivity at work. For example, if someone is not in a
-                good mood due to a fight with a wife/husband then it will affect
-                them in their office work, and he/ she will face stress and load
-                during work which in turn will affect the productivity of work.
-              </p>
-              <p>
-                Nowadays people are facing depression, anxiety, stress, and
-                tension for which counselling can be helpful for people to come
-                up with it.
-              </p>
-              <p>
-                Hence, it’s high time for people to understand the concept of
-                counselling and to go to a therapist or counselor whenever they
-                feel the need for it instead of neglecting it.
-              </p>
+              <p dangerouslySetInnerHTML={{ __html: description }} />
             </article>
           </div>
         </div>

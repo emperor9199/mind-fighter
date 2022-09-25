@@ -10,7 +10,7 @@ const BlogCards = ({ title, description, category }) => {
       </div>
       <div className="blog_card_inner_container">
         <h3>{title} </h3>
-        <p>{description}</p>
+        <p className="blog-text-truncate">{description}</p>
         <button className="read_more">Read More</button>
       </div>
     </div>

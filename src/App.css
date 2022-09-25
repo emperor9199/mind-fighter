@@ -15184,3 +15184,10 @@ ul.ascii
     display: none;
   }
 }
+
+.blog-text-truncate{
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
