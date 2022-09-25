@@ -61,3 +61,39 @@
   color: rgb(153, 148, 148);
   margin: 0 8rem;
 }
+
+@media (max-width: 800px) {
+  .blog_page_container {
+    height: fit-content;
+  }
+
+  .blog_container {
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .blog_container img {
+    border-radius: 1.5rem;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  .blog_page_container h2 {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    padding-top: 8rem;
+  }
+
+  .blog_content {
+    padding: 0;
+    text-align: justify;
+  }
+
+  .blog_card_container {
+    height: fit-content;
+  }
+}
