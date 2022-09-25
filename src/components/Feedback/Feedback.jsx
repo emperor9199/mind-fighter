@@ -25,14 +25,18 @@ const Feedback = () => {
           // `,
         }),
       }
-    ).then(() => {});
+    )
+      .then(() => alert("Your slot is booked!"))
+      .catch((e) =>
+        alert("Your feedback is not sent unfortunately, please try again!!!", e)
+      );
   };
 
   return (
     <section className="section colored">
       <div className="container">
         <div className="row">
-          <div className="col-lg-12">
+          <div className="col-lg-12 mb-5">
             <div className="center-heading">
               <h2 className="section-title">Feedback</h2>
             </div>
@@ -42,16 +46,18 @@ const Feedback = () => {
         <div className="row">
           <div className="col-lg-8 col-md-6 col-sm-12 container">
             <div className="contact-form">
-              <form id="contact">
+              <form id="contact-feedback" onSubmit={sendMail} method="get">
                 <div className="row">
                   <div className="col-lg-6 col-md-12 col-sm-12">
                     <fieldset>
+                      <label style={{ marginLeft: "1rem" }}>Full Name</label>
+
                       <input
                         name="name"
                         type="text"
                         className="form-control"
                         id="name"
-                        placeholder="Full Name"
+                        // placeholder="Full Name"
                         required=""
                         onChange={(e) => setFullName(e.target.value)}
                       />
@@ -60,12 +66,14 @@ const Feedback = () => {
 
                   <div className="col-lg-6 col-md-12 col-sm-12">
                     <fieldset>
+                      <label style={{ marginLeft: "1rem" }}>Email</label>
+
                       <input
                         name="email"
                         type="email"
                         className="form-control"
                         id="email"
-                        placeholder="E-Mail Address"
+                        // placeholder="E-Mail Address"
                         required=""
                         onChange={(e) => setEmail(e.target.value)}
                       />
@@ -74,12 +82,14 @@ const Feedback = () => {
 
                   <div className="col-lg-12">
                     <fieldset>
+                      <label style={{ marginLeft: "1rem" }}>Your Message</label>
+
                       <textarea
                         name="message"
                         rows="6"
                         className="form-control"
                         id="message"
-                        placeholder="Your Message"
+                        // placeholder="Your Message"
                         required=""
                         onChange={(e) => setMessage(e.target.value)}
                       ></textarea>
@@ -91,7 +101,7 @@ const Feedback = () => {
                         type="submit"
                         id="form-submit"
                         className="main-button"
-                        onClick={sendMail}
+                        // onClick={sendMail}
                       >
                         Send Message
                       </button>

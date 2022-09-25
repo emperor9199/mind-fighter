@@ -1,3 +1,4 @@
 .header-area.header-sticky .nav li a {
   font-size: 1.2rem;
+  cursor: pointer;
 }

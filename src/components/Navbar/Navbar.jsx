@@ -5,12 +5,18 @@ import $ from "jquery";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
-const Navbar = ({ scrollDown, scrollService, scrollContact, active, setActive }) => {
+const Navbar = ({
+  scrollDown,
+  scrollService,
+  scrollContact,
+  active,
+  setActive,
+}) => {
   const [isOpenNav, setIsOpenNav] = useState(false);
   let history = useNavigate();
 
   const redirectToAbout = () => {
-    setActive("home")
+    setActive("home");
     history("/");
     setTimeout(() => {
       scrollDown();
@@ -18,7 +24,7 @@ const Navbar = ({ scrollDown, scrollService, scrollContact, active, setActive })
   };
 
   const redirectToService = () => {
-    setActive("home")
+    setActive("home");
     history("/");
     setTimeout(() => {
       scrollService();
@@ -26,7 +32,7 @@ const Navbar = ({ scrollDown, scrollService, scrollContact, active, setActive })
   };
 
   const redirectToContact = () => {
-    setActive("home")
+    setActive("home");
     history("/");
     setTimeout(() => {
       scrollContact();
@@ -61,9 +67,10 @@ const Navbar = ({ scrollDown, scrollService, scrollContact, active, setActive })
                     className="mb-0 text-dark h5 mx-2 pt-2 nav_title_vk"
                     style={{
                       fontWeight: "900",
-                      fontSize: "2rem",
+                      fontSize: "1.7rem",
                       textTransform: "uppercase",
                       fontFamily: "Lovelo, sans-serif",
+                      color: "#122c3c",
                     }}
                   >
                     The Mind Fighter
@@ -73,7 +80,11 @@ const Navbar = ({ scrollDown, scrollService, scrollContact, active, setActive })
 
               <ul className="nav">
                 <li>
-                  <Link to="/" className={`${active === 'home' ? "active" : ""}`} onClick={() => setActive("home")}>
+                  <Link
+                    to="/"
+                    className={`${active === "home" ? "active" : ""}`}
+                    onClick={() => setActive("home")}
+                  >
                     Home
                   </Link>
                 </li>
@@ -82,13 +93,19 @@ const Navbar = ({ scrollDown, scrollService, scrollContact, active, setActive })
                 </li>
 
                 <li>
-                  <Link to="/blogs" className={`${active === 'blog' ? "active" : ""}`} onClick={() => setActive("blog")}>Blog</Link>
+                  <Link
+                    to="/blogs"
+                    className={`${active === "blog" ? "active" : ""}`}
+                    onClick={() => setActive("blog")}
+                  >
+                    Blog
+                  </Link>
                 </li>
                 <li>
                   <a onClick={redirectToService}>Services</a>
                 </li>
                 <li>
-                  <a onClick={redirectToContact}>Contact Us</a>
+                  <a onClick={redirectToContact}>Book a slot</a>
                 </li>
               </ul>
               <a

@@ -29,14 +29,18 @@ const ContactUs = ({ contcatSection }) => {
           Message: message,
         }),
       }
-    ).then(() => {});
+    )
+      .then(() => alert("Your slot is booked!"))
+      .catch((e) =>
+        alert("Your slot is not booked unfortunately, please try again!!!", e)
+      );
   };
 
   return (
     <section className="section colored" ref={contcatSection}>
       <div className="container">
         <div className="row">
-          <div className="col-lg-12">
+          <div className="col-lg-12 mb-5">
             <div className="center-heading">
               <h2 className="section-title">Book a Slot</h2>
             </div>
@@ -66,16 +70,17 @@ const ContactUs = ({ contcatSection }) => {
 
           <div className="col-lg-8 col-md-6 col-sm-12 container">
             <div className="contact-form">
-              <form id="contact" action="" method="get">
+              <form id="contact-slot" onSubmit={sendMail} method="get">
                 <div className="row">
                   <div className="col-lg-6 col-md-12 col-sm-12">
                     <fieldset>
+                      <label style={{ marginLeft: "1rem" }}>First Name</label>
                       <input
                         name="name"
                         type="text"
                         className="form-control"
                         id="name"
-                        placeholder="First Name"
+                        // placeholder="First Name"
                         required=""
                         onChange={(e) => setFirstName(e.target.value)}
                       />
@@ -83,12 +88,13 @@ const ContactUs = ({ contcatSection }) => {
                   </div>
                   <div className="col-lg-6 col-md-12 col-sm-12">
                     <fieldset>
+                      <label style={{ marginLeft: "1rem" }}>Last Name</label>
                       <input
                         name="name"
                         type="text"
                         className="form-control"
                         id="name"
-                        placeholder="Last Name"
+                        // placeholder="Last Name"
                         required=""
                         onChange={(e) => setLastName(e.target.value)}
                       />
@@ -97,12 +103,13 @@ const ContactUs = ({ contcatSection }) => {
 
                   <div className="col-lg-6 col-md-12 col-sm-12">
                     <fieldset>
+                      <label style={{ marginLeft: "1rem" }}>Email</label>
                       <input
                         name="email"
                         type="email"
                         className="form-control"
                         id="email"
-                        placeholder="E-Mail Address"
+                        // placeholder="E-Mail Address"
                         required=""
                         onChange={(e) => setEmail(e.target.value)}
                       />
@@ -111,12 +118,16 @@ const ContactUs = ({ contcatSection }) => {
 
                   <div className="col-lg-6 col-md-12 col-sm-12">
                     <fieldset>
+                      <label style={{ marginLeft: "1rem" }}>
+                        Contact Number
+                      </label>
+
                       <input
                         name="Phone"
                         type="Phone"
                         className="form-control"
                         id="Phone"
-                        placeholder="Contact Number"
+                        // placeholder="Contact Number"
                         required=""
                         onChange={(e) => setMobile(e.target.value)}
                       />
@@ -125,12 +136,13 @@ const ContactUs = ({ contcatSection }) => {
 
                   <div className="col-lg-6 col-md-12 col-sm-12">
                     <fieldset>
+                      <label style={{ marginLeft: "1rem" }}>Select Date</label>
                       <input
                         name="Date"
                         type="Date"
                         className="form-control"
                         id="Date"
-                        placeholder="Select Date"
+                        // placeholder="Select Date"
                         required=""
                         onChange={(e) => setDate(e.target.value)}
                       />
@@ -138,12 +150,13 @@ const ContactUs = ({ contcatSection }) => {
                   </div>
                   <div className="col-lg-6 col-md-12 col-sm-12">
                     <fieldset>
+                      <label style={{ marginLeft: "1rem" }}>Select Time</label>
                       <input
                         name="Time"
                         type="Time"
                         className="form-control"
                         id="Time"
-                        placeholder="Select Time"
+                        // placeholder="Select Time"
                         required=""
                         onChange={(e) => setTime(e.target.value)}
                       />
@@ -151,12 +164,14 @@ const ContactUs = ({ contcatSection }) => {
                   </div>
                   <div className="col-lg-12">
                     <fieldset>
+                      <label style={{ marginLeft: "1rem" }}>Your Message</label>
+
                       <textarea
                         name="message"
                         rows="6"
                         className="form-control"
                         id="message"
-                        placeholder="Your Message"
+                        // placeholder="Your Message"
                         required=""
                         onChange={(e) => setMessage(e.target.value)}
                       ></textarea>
@@ -168,7 +183,7 @@ const ContactUs = ({ contcatSection }) => {
                         type="submit"
                         id="form-submit"
                         className="main-button"
-                        onClick={sendMail}
+                        // onClick={sendMail}
                       >
                         Book Now
                       </button>

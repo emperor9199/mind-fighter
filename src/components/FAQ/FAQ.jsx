@@ -13,7 +13,7 @@ const FAQ = () => {
           </div>
           <div className="offset-lg-3 col-lg-6">
             <div className="center-text">
-              <p>The Mind Fighter – Let's resolve and evolve</p>
+              <p>The Mind Fighter – Let's Resolve and Evolve</p>
             </div>
           </div>
         </div>

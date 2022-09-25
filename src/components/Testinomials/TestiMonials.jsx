@@ -32,7 +32,7 @@ const TestiMonials = () => {
       gender: "female",
     },
     {
-      name: "Rohan Porwal",
+      name: "Rohan",
       description:
         "You will always need a person in life who will be there for you to vent out all your feelings and emotions and find a solution to all your problems and for me that person is Janki. She is a great counselor, her sessions helped me in coping with my depression. I recommend everyone to go to her who is having any personal or mental health issues as she is a great person to talk to about all your mental healthcare needs.",
       address: "Ophthalmologist",
@@ -40,7 +40,7 @@ const TestiMonials = () => {
       gender: "male",
     },
     {
-      name: "Dharnee Patel",
+      name: "Dharnee",
       description:
         "I highly recommend counselling from Ms. Janki as she is empathetic, nonjudgmental, and understanding. It was easy to share my problem with her and she helped to overcome my anxiety with her counselling.",
       address: "Software Engineer",
@@ -48,7 +48,7 @@ const TestiMonials = () => {
       gender: "female",
     },
     {
-      name: "Luiza DSouza",
+      name: "Luiza",
       description:
         "I was under severe stress, and it was affecting my personal and professional life. After, meeting Ms. Janki I felt relieved as she helped me to cope with stress through stress management. With the help of meditation and counselling provided by her, I finally came out of my stress. I felt very safe and peaceful talking to her, highly recommend taking sessions from The Mind Fighter.",
       address: "Export Executive",
