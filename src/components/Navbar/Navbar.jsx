@@ -5,11 +5,12 @@ import $ from "jquery";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
-const Navbar = ({ scrollDown, scrollService, scrollContact }) => {
+const Navbar = ({ scrollDown, scrollService, scrollContact, active, setActive }) => {
   const [isOpenNav, setIsOpenNav] = useState(false);
   let history = useNavigate();
 
   const redirectToAbout = () => {
+    setActive("home")
     history("/");
     setTimeout(() => {
       scrollDown();
@@ -17,6 +18,7 @@ const Navbar = ({ scrollDown, scrollService, scrollContact }) => {
   };
 
   const redirectToService = () => {
+    setActive("home")
     history("/");
     setTimeout(() => {
       scrollService();
@@ -24,6 +26,7 @@ const Navbar = ({ scrollDown, scrollService, scrollContact }) => {
   };
 
   const redirectToContact = () => {
+    setActive("home")
     history("/");
     setTimeout(() => {
       scrollContact();
@@ -41,7 +44,7 @@ const Navbar = ({ scrollDown, scrollService, scrollContact }) => {
         <div className="row">
           <div className="col-12">
             <nav className="main-nav d-flex flex-row justify-content-between align-items-center nav_con_vk">
-              <Link to="/">
+              <Link to="/" onClick={() => setActive("home")}>
                 <div className="d-flex flex-row justify-content-between align-items-center">
                   <img
                     src={logoImg}
@@ -70,7 +73,7 @@ const Navbar = ({ scrollDown, scrollService, scrollContact }) => {
 
               <ul className="nav">
                 <li>
-                  <Link className="active" to="/">
+                  <Link to="/" className={`${active === 'home' ? "active" : ""}`} onClick={() => setActive("home")}>
                     Home
                   </Link>
                 </li>
@@ -79,7 +82,7 @@ const Navbar = ({ scrollDown, scrollService, scrollContact }) => {
                 </li>
 
                 <li>
-                  <Link to="/blogs">Blog</Link>
+                  <Link to="/blogs" className={`${active === 'blog' ? "active" : ""}`} onClick={() => setActive("blog")}>Blog</Link>
                 </li>
                 <li>
                   <a onClick={redirectToService}>Services</a>
