@@ -5,7 +5,7 @@ import sportss from "../../images/sportss.jpg";
 export const blogData = [
   {
     "id": 1,
-    "title": "RISING NEED FOR COUNSELLING",
+    "title": "Rising need for counselling",
     "description": "<p>Through counseling, a person can understand the problem affecting their life and they can come up with some solution. The main thing about which people need to get aware is about being aware of their negative emotions instead of neglecting them they should try to apply ways to cope with them.</p> <p>One can cope with personal life problems such as family counseling, couple counseling, relationship counseling, and individual counseling. There are other areas like employee counseling, sports counseling, student counseling, and many more. There are employees in the companies who are stressed due to their work and somehow it affects his/ her life relations which results in a poor relationship with family and leads to low productivity at work. For example, if someone is not in a good mood due to a fight with a wife/husband then it will affect them in their office work, and he/ she will face stress and load during work which in turn will affect the productivity of work.</p><p>Nowadays people are facing depression, anxiety, stress, and tension for which counseling can be helpful for people to come up with it.</p><p>Hence, it’s high time for people to understand the concept of counseling and to go to a therapist or counselor whenever they feel the need for it instead of neglecting it.</p>",
     "category": "Therapy",
     "img": yogas,
