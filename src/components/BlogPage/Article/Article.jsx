@@ -1,6 +1,6 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import "./Article.css";
-import imgTest from "../../../images/inner-blog.jpg";
+import imgTest from "../../../images/blog1.jpg";
 import jankiImg from "../../../images/pic.jpg";
 import imgTest1 from "../../../images/blog1.jpg";
 import imgTest2 from "../../../images/blog2.jpg";
@@ -8,16 +8,16 @@ import imgTest3 from "../../../images/blog1.jpg";
 
 const Article = () => {
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, )
-  
+    window.scrollTo(0, 0);
+  });
+
   return (
     <>
       <div class="container x-container">
-        <div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative">
+        <div class="jumbotron jumbotron-fluid mb-3 pl-0 pt-0 pb-0 bg-white position-relative article_main_container">
           <div class="h-100 tofront">
             <div class="row justify-content-between article_upper_container">
-              <div class="col-md-6 pb-6 align-self-center ">
+              <div class="col-md-6 pb-6 align-self-center">
                 <p class="text-uppercase font-weight-bold">
                   <a class="text-danger" href="./category.html">
                     Stories
@@ -66,19 +66,7 @@ const Article = () => {
         </div>
       </div>
       <div class="pt-6 pb-4 text-justify">
-        <div class="row justify-content-center w-100">
-          {/* <div class="col-lg-2 pr-4 mb-4 col-md-12">
-            <div class="sticky-top text-center">
-              <div class="text-muted">Share this</div>
-              <div class="share d-inline-block">
-                <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-                  <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
-                  <a class="a2a_button_facebook"></a>
-                  <a class="a2a_button_twitter"></a>
-                </div>
-              </div>
-            </div>
-          </div> */}
+        <div class="row justify-content-center w-100 sub_article_main_container ">
           <div class="col-md-12 col-lg-10">
             <article class="article-post">
               <p>

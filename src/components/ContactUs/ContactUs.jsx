@@ -132,7 +132,7 @@ const ContactUs = ({ contcatSection }) => {
                         id="form-submit"
                         className="main-button"
                       >
-                        Send Message
+                        Book Now
                       </button>
                     </fieldset>
                   </div>

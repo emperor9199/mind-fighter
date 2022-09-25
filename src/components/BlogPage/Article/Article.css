@@ -14,7 +14,31 @@
   object-fit: cover;
 }
 
-/* .article_img_container img {
-  height: 100%;
-  border: 3px solid blue;
-} */
+@media (max-width: 768px) {
+  .article_upper_container {
+    height: fit-content;
+    width: fit-content;
+  }
+
+  .article_upper_container .article_cover {
+    position: initial;
+    bottom: 0;
+    width: 100vw;
+    margin: 0;
+    height: 40%;
+  }
+
+  .tofront {
+    position: initial;
+  }
+
+  .article_main_container {
+    margin: 0;
+    padding: 0;
+  }
+
+  .sub_article_main_container {
+    padding: 0;
+    margin: 0;
+  }
+}

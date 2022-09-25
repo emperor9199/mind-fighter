@@ -18,3 +18,9 @@
 .blog_card_inner_container p {
   margin: 1rem 0;
 }
+
+@media (max-width: 768px) {
+  .blog_card_container {
+    height: fit-content;
+  }
+}
