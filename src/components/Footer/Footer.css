@@ -149,10 +149,33 @@
   color: #29aafe;
 }
 
+
+.footer-social-section{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content-section{
+  width: 80%;
+}
+
 @media (max-width: 767px) {
   .social-icons li.title {
     display: block;
     margin-right: 0;
     font-weight: 600;
+  }
+  .footer-social-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+  .footer-content-section{
+    width: 100%;
+  }
+  .footer-main-com{
+    text-align: center;
   }
 }

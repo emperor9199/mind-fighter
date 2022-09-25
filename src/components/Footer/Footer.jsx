@@ -39,10 +39,10 @@ const Footer = ({
   return (
     <footer className="site-footer">
       <div className="container">
-        <div className="row">
+        <div className="row footer-main-com">
           <div className="col-sm-12 col-md-6">
             <h6>About</h6>
-            <p className="text-justify col-10 pl-0">
+            <p className="text-justify footer-content-section">
               The main aim is to help through counselling and psychological
               therapies in holistic way. We use psychological tests to assess
               the client as per the need. Our services will be provided though
@@ -95,18 +95,21 @@ const Footer = ({
         <hr />
       </div>
       <div className="container">
-
-      <div class="d-flex justify-content-between">
-      <div>
-          <p className="copyright-text">
+        <div className="footer-social-section">
+          <div>
+            <p className="copyright-text">
               Copyright &copy; 2022 All Rights Reserved by
               <a href="#"> The Mind Fighter&reg;</a>.
             </p>
           </div>
-          <div>Contact:<span className="ml-1">+91-9979555154 </span></div>
-          <div>Email:<span className="ml-1">themindfighters@gmail.com</span></div>
           <div>
-          <ul className="social-icons">
+            Contact:<span className="ml-1">+91-9979555154 </span>
+          </div>
+          <div>
+            Email:<span className="ml-1">themindfighters@gmail.com</span>
+          </div>
+          <div>
+            <ul className="social-icons">
               <li>
                 <a
                   className="facebook"
@@ -146,9 +149,7 @@ const Footer = ({
               </li>
             </ul>
           </div>
-      </div>
-
-        
+        </div>
       </div>
     </footer>
   );
