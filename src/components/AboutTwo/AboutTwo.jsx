@@ -4,7 +4,7 @@ import about2 from "../../images/about2.svg";
 
 const AboutTwo = () => {
   return (
-    <section className="section padding-bottom-100">
+    <section className="section padding-bottom-40">
       <div className="container">
         <div className="row">
           <div className="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
