@@ -113,7 +113,7 @@ const Footer = ({
               <li>
                 <a
                   className="facebook"
-                  href="//api.whatsapp.com/send?phone=918128347277"
+                  href="//api.whatsapp.com/send?phone=919979555154"
                   target="_blank"
                 >
                   <i className="fa fa-whatsapp" />

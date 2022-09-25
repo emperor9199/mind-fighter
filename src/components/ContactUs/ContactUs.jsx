@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./ContactUs.css";
+import { useNavigate } from "react-router-dom";
 
 const ContactUs = ({ contcatSection }) => {
   const [firstName, setFirstName] = useState();
@@ -9,8 +10,11 @@ const ContactUs = ({ contcatSection }) => {
   const [date, setDate] = useState();
   const [time, setTime] = useState();
   const [message, setMessage] = useState();
+  const navigate = useNavigate();
 
-  const sendMail = () => {
+  const sendMail = (e) => {
+    e.preventDefault();
+
     fetch(
       "https://public.herotofu.com/v1/eb7458a0-3cf8-11ed-a10f-d1a38bd15d37",
       {
@@ -30,10 +34,22 @@ const ContactUs = ({ contcatSection }) => {
         }),
       }
     )
-      .then(() => alert("Your slot is booked!"))
-      .catch((e) =>
-        alert("Your slot is not booked unfortunately, please try again!!!", e)
-      );
+      .then(() => {
+        alert("Your slot is booked!");
+        navigate("/");
+      })
+      .catch((e) => {
+        alert("Your slot is not booked unfortunately, please try again!!!", e);
+        navigate("/");
+      });
+
+    setFirstName("");
+    setLastName("");
+    setEmail("");
+    setMobile("");
+    setMessage("");
+    setDate("");
+    setTime("");
   };
 
   return (
@@ -70,7 +86,12 @@ const ContactUs = ({ contcatSection }) => {
 
           <div className="col-lg-8 col-md-6 col-sm-12 container">
             <div className="contact-form">
-              <form id="contact-slot" onSubmit={sendMail} method="get">
+              <form
+                id="contact-slot"
+                // action="https://public.herotofu.com/v1/c048fd40-3ca6-11ed-a10f-d1a38bd15d37"
+                // method="post"
+                onSubmit={sendMail}
+              >
                 <div className="row">
                   <div className="col-lg-6 col-md-12 col-sm-12">
                     <fieldset>
@@ -82,6 +103,7 @@ const ContactUs = ({ contcatSection }) => {
                         id="name"
                         // placeholder="First Name"
                         required=""
+                        value={firstName}
                         onChange={(e) => setFirstName(e.target.value)}
                       />
                     </fieldset>
@@ -94,6 +116,7 @@ const ContactUs = ({ contcatSection }) => {
                         type="text"
                         className="form-control"
                         id="name"
+                        value={lastName}
                         // placeholder="Last Name"
                         required=""
                         onChange={(e) => setLastName(e.target.value)}
@@ -109,6 +132,7 @@ const ContactUs = ({ contcatSection }) => {
                         type="email"
                         className="form-control"
                         id="email"
+                        value={email}
                         // placeholder="E-Mail Address"
                         required=""
                         onChange={(e) => setEmail(e.target.value)}
@@ -127,6 +151,7 @@ const ContactUs = ({ contcatSection }) => {
                         type="Phone"
                         className="form-control"
                         id="Phone"
+                        value={mobile}
                         // placeholder="Contact Number"
                         required=""
                         onChange={(e) => setMobile(e.target.value)}
@@ -142,6 +167,7 @@ const ContactUs = ({ contcatSection }) => {
                         type="Date"
                         className="form-control"
                         id="Date"
+                        value={date}
                         // placeholder="Select Date"
                         required=""
                         onChange={(e) => setDate(e.target.value)}
@@ -156,6 +182,7 @@ const ContactUs = ({ contcatSection }) => {
                         type="Time"
                         className="form-control"
                         id="Time"
+                        value={time}
                         // placeholder="Select Time"
                         required=""
                         onChange={(e) => setTime(e.target.value)}
@@ -171,6 +198,7 @@ const ContactUs = ({ contcatSection }) => {
                         rows="6"
                         className="form-control"
                         id="message"
+                        value={message}
                         // placeholder="Your Message"
                         required=""
                         onChange={(e) => setMessage(e.target.value)}
