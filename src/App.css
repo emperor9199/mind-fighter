@@ -15183,3 +15183,18 @@ ul.ascii
     font-size: 1rem !important;
   }
 }
+
+
+.blog-text-truncate{
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.blog-text-truncate-main{
+  -webkit-line-clamp: 5;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
