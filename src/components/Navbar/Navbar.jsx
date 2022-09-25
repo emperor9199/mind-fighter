@@ -43,8 +43,11 @@ const Navbar = ({
   };
 
   function toggle() {
-    setIsOpenNav(!isOpenNav);
     $(".header-area .nav").slideToggle(200);
+  }
+
+  function offNav(){
+    setIsOpenNav(!isOpenNav);
   }
 
   return (
@@ -125,7 +128,7 @@ const Navbar = ({
               </ul>
               <a
                 className={isOpenNav ? "active menu-trigger" : "menu-trigger"}
-                onClick={() => toggle()}
+                onClick={() => {toggle();offNav();}}
               >
                 <span>Menu</span>
               </a>
