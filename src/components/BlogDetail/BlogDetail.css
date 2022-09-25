@@ -7,3 +7,24 @@
   align-items: center;
   justify-content: center;
 }
+
+.mobile_cata_pills {
+  display: none;
+}
+
+@media (max-width: 799px) {
+  .mobile_cata_pills {
+    display: block;
+  }
+
+  .mobile_cata_pills select {
+    width: 100%;
+    margin-bottom: 0.9rem;
+    padding: 0.3rem 0.5rem;
+    font-weight: bold;
+  }
+
+  .center-pill {
+    display: none;
+  }
+}

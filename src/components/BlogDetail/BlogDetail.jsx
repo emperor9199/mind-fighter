@@ -36,6 +36,15 @@ const BlogDetail = () => {
           );
         })}
       </div>
+
+      {/* mobile view*/}
+      <div className="mobile_cata_pills">
+        <select onChange={(e) => setSelectedCategory(e.target.value)}>
+          {categories?.map((category) => {
+            return <option value={category}>{category}</option>;
+          })}
+        </select>
+      </div>
       <div className="d-flex flex-wrap">
         {categoryData?.map((item) => {
           return (
