@@ -79,3 +79,10 @@
     width: 100%;
   }
 }
+
+@media (min-width: 1024px) {
+  .article-con-vk{
+    padding: 0 !important;
+    margin: 0% !important;
+  }
+}
