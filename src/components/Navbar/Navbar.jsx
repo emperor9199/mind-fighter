@@ -46,7 +46,7 @@ const Navbar = ({
     $(".header-area .nav").slideToggle(200);
   }
 
-  function offNav(){
+  function offNav() {
     setIsOpenNav(!isOpenNav);
   }
 
@@ -78,7 +78,7 @@ const Navbar = ({
                     className="mb-0 text-dark h5 mx-2 pt-2 nav_title_vk"
                     style={{
                       fontWeight: "500",
-                      fontSize: "1.7rem",
+                      fontSize: "1.5rem",
                       textTransform: "uppercase",
                       fontFamily: "Russo One, sans-serif",
                       display: isOpenNav ? "none" : "inline",
@@ -129,7 +129,10 @@ const Navbar = ({
               </ul>
               <a
                 className={isOpenNav ? "active menu-trigger" : "menu-trigger"}
-                onClick={() => {toggle();offNav();}}
+                onClick={() => {
+                  toggle();
+                  offNav();
+                }}
               >
                 <span>Menu</span>
               </a>
