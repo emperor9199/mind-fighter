@@ -102,7 +102,7 @@ const ContactUs = ({ contcatSection }) => {
                         className="form-control"
                         id="name"
                         // placeholder="First Name"
-                        required=""
+                        required
                         value={firstName}
                         onChange={(e) => setFirstName(e.target.value)}
                       />
@@ -118,7 +118,7 @@ const ContactUs = ({ contcatSection }) => {
                         id="name"
                         value={lastName}
                         // placeholder="Last Name"
-                        required=""
+                        required
                         onChange={(e) => setLastName(e.target.value)}
                       />
                     </fieldset>
@@ -134,7 +134,7 @@ const ContactUs = ({ contcatSection }) => {
                         id="email"
                         value={email}
                         // placeholder="E-Mail Address"
-                        required=""
+                        required
                         onChange={(e) => setEmail(e.target.value)}
                       />
                     </fieldset>
@@ -153,7 +153,7 @@ const ContactUs = ({ contcatSection }) => {
                         id="Phone"
                         value={mobile}
                         // placeholder="Contact Number"
-                        required=""
+                        required
                         onChange={(e) => setMobile(e.target.value)}
                       />
                     </fieldset>
@@ -169,7 +169,7 @@ const ContactUs = ({ contcatSection }) => {
                         id="Date"
                         value={date}
                         // placeholder="Select Date"
-                        required=""
+                        required
                         onChange={(e) => setDate(e.target.value)}
                       />
                     </fieldset>
@@ -184,7 +184,7 @@ const ContactUs = ({ contcatSection }) => {
                         id="Time"
                         value={time}
                         // placeholder="Select Time"
-                        required=""
+                        required
                         onChange={(e) => setTime(e.target.value)}
                       />
                     </fieldset>
