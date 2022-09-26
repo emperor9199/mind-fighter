@@ -2,9 +2,13 @@ import React from "react";
 import "./AboutUs.css";
 import about1 from "../../images/about1.svg";
 
-const AboutUs = ({aboutSection}) => {
+const AboutUs = ({ aboutSection }) => {
   return (
-    <section className="section padding-top-70 padding-bottom-0" id="features" ref={aboutSection}>
+    <section
+      className="section padding-top-70 padding-bottom-0"
+      id="features"
+      ref={aboutSection}
+    >
       <div className="container">
         <div className="row">
           <div
@@ -20,7 +24,7 @@ const AboutUs = ({aboutSection}) => {
           <div className="col-lg-1"></div>
           <div className="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-top-fix">
             <div className="left-heading">
-              <h2 className="section-title">Who we are?</h2>
+              <h2 className="section-title">Who are we?</h2>
             </div>
             <div className="left-text">
               <p>
