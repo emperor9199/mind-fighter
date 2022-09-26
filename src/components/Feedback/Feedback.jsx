@@ -79,7 +79,7 @@ const Feedback = () => {
                         className="form-control"
                         id="name"
                         // placeholder="Full Name"
-                        required=""
+                        required
                         value={fullName}
                         onChange={(e) => setFullName(e.target.value)}
                       />
@@ -97,7 +97,7 @@ const Feedback = () => {
                         id="email"
                         value={email}
                         // placeholder="E-Mail Address"
-                        required=""
+                        required
                         onChange={(e) => setEmail(e.target.value)}
                       />
                     </fieldset>
@@ -114,7 +114,7 @@ const Feedback = () => {
                         id="message"
                         value={message}
                         // placeholder="Your Message"
-                        required=""
+                        required
                         onChange={(e) => setMessage(e.target.value)}
                       ></textarea>
                     </fieldset>
