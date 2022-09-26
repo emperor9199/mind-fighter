@@ -15198,3 +15198,33 @@ ul.ascii
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+@media (max-width:840px) {
+  .welcome-area {
+    background-position: -320px 0;
+  }
+}
+
+@media (min-width:650px) and (max-width:740px ) {
+  .welcome-area {
+    background-position: -400px 0;
+  }
+}
+
+@media (min-width:520px) and (max-width:650px ) {
+  .welcome-area {
+    background-position: -440px 0;
+  }
+}
+
+@media (min-width:420px) and (max-width:520px ) {
+  .welcome-area {
+    background-position: -520px 0;
+  }
+}
+
+@media (max-width:420px ) {
+  .welcome-area {
+    background-position: -560px 0;
+  }
+}

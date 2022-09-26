@@ -50,7 +50,7 @@ const Article = () => {
           </div>
         </div>
       </div>
-      <div class="container ">
+      <div className="container article-con-vk">
       <div class="pt-4 pb-4 text-justify">
         <div class="row justify-content-center w-100 sub_article_main_container ">
           <div class="col-md-12 col-lg-10">
