@@ -15198,7 +15198,7 @@ ul.ascii
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-
+/* 
 @media (max-width:840px) {
   .welcome-area {
     background-position: -320px 0;
@@ -15227,4 +15227,4 @@ ul.ascii
   .welcome-area {
     background-position: -430px 0;
   }
-}
+} */
