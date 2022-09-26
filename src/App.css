@@ -15211,20 +15211,20 @@ ul.ascii
   }
 }
 
-@media (min-width:520px) and (max-width:650px ) {
+@media (min-width:560px) and (max-width:650px ) {
   .welcome-area {
     background-position: -440px 0;
   }
 }
 
-@media (min-width:420px) and (max-width:520px ) {
+@media (min-width:420px) and (max-width:560px ) {
   .welcome-area {
-    background-position: -520px 0;
+    background-position: -310px 0;
   }
 }
 
 @media (max-width:420px ) {
   .welcome-area {
-    background-position: -560px 0;
+    background-position: -390px 0;
   }
 }
