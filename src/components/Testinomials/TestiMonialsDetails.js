@@ -4,7 +4,6 @@ import femaleCover from "../../images/femaleCover.jpg";
 
 const TestiMonialsDetails = ({ testiMonialDetail }) => {
   const { name, address, description, img, gender } = testiMonialDetail;
-  console.log("testiMonialDetail" + testiMonialDetail);
   return (
     <figure className="item snip1515">
       <div className="profile-image">

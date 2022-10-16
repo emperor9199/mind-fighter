@@ -1,17 +1,12 @@
 import React, { useEffect } from "react";
-import { blogData } from "../../BlogDetail/blogs";
 import "./Article.css";
-import imgTest from "../../../images/blog1.jpg";
 import jankiImg from "../../../images/pic.jpg";
-import imgTest1 from "../../../images/blog1.jpg";
-import imgTest2 from "../../../images/blog2.jpg";
-import imgTest3 from "../../../images/blog1.jpg";
 import { useParams } from "react-router-dom";
 
-const Article = () => {
+const Article = ({blogs}) => {
   const params = useParams();
-  const serviceContent = blogData?.filter((word) => word.id == params.id);
-  const { title, description, category, img, imgPara } = serviceContent[0];
+  const serviceContent = blogs?.filter((word) => word.id == params.id);
+  const { title, description, category, image_url, img_para } = serviceContent[0];
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -27,7 +22,7 @@ const Article = () => {
                 <h1 class="display-4 secondfont mb-3 font-weight-bold">
                   {title}
                 </h1>
-                <p class="mb-3 text-justify">{imgPara}</p>
+                <p class="mb-3 text-justify">{img_para}</p>
                 <div class="d-flex align-items-center">
                   <img
                     class="rounded-circle"
@@ -44,7 +39,7 @@ const Article = () => {
                 </div>
               </div>
               {/* <div class="col-md-6 pr-0 article_img_container"> */}
-              <img src={img} className="article_cover" />
+              <img src={image_url} className="article_cover" />
               {/* </div> */}
             </div>
           </div>

@@ -12,7 +12,7 @@ import FAQ from "../FAQ/FAQ";
 import AboutThree from "../AboutThree/AboutThree";
 import Feedback from "../Feedback/Feedback";
 
-const Home = ({ aboutSection, serviceSection, contcatSection }) => {
+const Home = ({ aboutSection, serviceSection, contcatSection, blogs }) => {
   return (
     <>
       {" "}
@@ -24,7 +24,7 @@ const Home = ({ aboutSection, serviceSection, contcatSection }) => {
       <Services serviceSection={serviceSection} />
       <TestiMonials />
       {/* <Counter /> */}
-      <Blog />
+      <Blog blogs={blogs}/>
       <ContactUs contcatSection={contcatSection} />
       <FAQ />
       <Feedback />

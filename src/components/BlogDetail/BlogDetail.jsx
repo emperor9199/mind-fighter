@@ -1,22 +1,21 @@
 import React, { useEffect, useState } from "react";
 import BlogCards from "./BlogCards/BlogCards";
-import { blogData } from "./blogs.js";
 import "./BlogDetail.css";
 
-const BlogDetail = () => {
+const BlogDetail = ({blogs}) => {
   const [categories, setCategories] = useState([
-    "Mental health",
+    "Mental Health",
     "Therapy",
-    "Physical health",
+    "Physical Health",
   ]);
-  const [selectedCategory, setSelectedCategory] = useState("Mental health");
+  const [selectedCategory, setSelectedCategory] = useState("Mental Health");
   const [categoryData, setCategoryData] = useState(
-    blogData.filter((item) => item.category === "Mental health")
+    blogs?.filter((item) => item.category === "Mental Health")
   );
 
   useEffect(() => {
     setCategoryData(
-      blogData.filter((item) => item.category === selectedCategory)
+      blogs?.filter((item) => item.category === selectedCategory)
     );
   }, [selectedCategory]);
 
@@ -53,10 +52,10 @@ const BlogDetail = () => {
           return (
             <BlogCards
               title={item.title}
-              description={item.imgPara}
+              description={item.img_para}
               category={item.category}
               id={item.id}
-              img={item.img}
+              img={item.image_url}
             />
           );
         })}

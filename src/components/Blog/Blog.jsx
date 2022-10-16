@@ -1,12 +1,8 @@
 import React from "react";
 import "./Blog.css";
-import blog1 from "../../images/blog1.jpg";
-import blog2 from "../../images/blog2.jpg";
-import blog3 from "../../images/blog3.jpg";
 import { Link } from "react-router-dom";
-import { blogData } from "../BlogDetail/blogs";
 
-const Blog = () => {
+const Blog = ({blogs}) => {
   return (
     <section className="section" id="blog">
       <div className="container">
@@ -27,19 +23,19 @@ const Blog = () => {
         </div>
 
         <div className="row">
-          {blogData?.slice(0, 3)?.map((blog) => {
+          {blogs?.slice(0, 3)?.map((blog) => {
             return (
               <div className="col-lg-4 col-md-6 col-sm-12" key={blog.id}>
                 <div className="blog-post-thumb">
                   <div className="img">
-                    <img src={blog.img} alt="" />
+                    <img src={blog.image_url} alt="" />
                   </div>
                   <div className="blog-content">
                     <h3>
                       <a href="javascript:;">{blog.title}</a>
                     </h3>
                     <div className="text blog-text-truncate">
-                      {blog.imgPara}
+                      {blog.img_para}
                     </div>
                     <Link className="main-button" to={`/article/${blog.id}`}>
                       Read More
